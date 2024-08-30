@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DNHI Lab - Team</title>
+    <link rel="icon" href="http://www.dnhi-lab.org/wp-content/uploads/2021/08/icons8-brain-64.png" sizes="32x32">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Roboto', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+                    },
+                    colors: {
+                        'accent-blue': '#0c4a6e',
+                        'light-gray': '#F3F4F6',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body class="bg-light-gray text-gray-800 font-sans">
+    <!-- Banner (hidden on mobile) -->
+    <div class="hidden md:block bg-white py-4">
+        <div class="container mx-auto px-4 flex justify-center items-center">
+            <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/icons8-brain-64.png" alt="Brain Icon"
+                class="h-12 w-12 mr-4">
+            <div class="text-center">
+                <h1 class="text-2xl font-bold text-cyan-600">DECISION NEUROSCIENCE OF HUMAN INTERACTIONS</h1>
+                <p class="text-sm text-gray-600">Lab at Heidelberg University</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header x-data="{ isOpen: false }" class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <!-- Mobile logo (visible only on mobile) -->
+            <div class="flex items-center md:hidden">
+                <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/icons8-brain-64.png" alt="Brain Icon"
+                    class="h-8 w-8 mr-2">
+                <span class="text-lg font-bold text-cyan-600">DNHI Lab</span>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button @click="isOpen = !isOpen" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Navigation -->
+            <nav :class="{'flex': isOpen, 'hidden': !isOpen}"
+                class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center"
+                x-cloak>
+                <a href="index.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Home</a>
+                <a href="research.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Research</a>
+                <a href="people.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">People</a>
+                <a href="publications.html"
+                    class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
+                <a href="teaching.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Teaching</a>
+                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open
+                    Positions</a>
+                <a href="contact.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 pt-24 pb-12">
+        <section class="max-w-7xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-extrabold text-cyan-600 mb-12">Our Team</h1>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Team Member 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/Christoph.jpg" alt="Christoph Korn"
+                        class="w-48 h-auto mb-4 object-cover">
+                    <h2 class="text-2xl font-bold text-center mb-2">Christoph Korn</h2>
+                    <p class="text-gray-600 text-center mb-4">Principal Investigator</p>
+                    <p class="text-sm mb-4 text-justify">Since December 2020, I've been an Assistant Professor
+                        (tenure-track) of Social Neuroscience at Heidelberg University in the <a
+                            href="https://www.klinikum.uni-heidelberg.de/en/zentrum-fuer-psychosoziale-medizin-zpm/klinik-fuer-allgemeine-psychiatrie/ueber-uns/sektionen/sektion-soziale-neurowissenschaften"
+                            target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue">Section Social
+                            Neuroscience</a>, Department of General Adult Psychiatry.
+
+                        In 2018, I received an <a href="http://gepris.dfg.de/gepris/projekt/392443797?language=en"
+                            target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue">Emmy-Noether
+                            research group</a> from the DFG on "Human cooperation: A multimodal approach," allowing me
+                        to establish a group at the <a
+                            href="https://www.uke.de/kliniken-institute/institute/systemische-neurowissenschaften/team/christoph-w.-korn.html"
+                            target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue">Institute of
+                            Systems Neuroscience</a> (UKE, Hamburg).
+
+                        Previously, I was a postdoc in Jan Gläscher's group at UKE and in Dominik Bach's group at the
+                        University of Zurich. I completed my PhD at Freie Universität Berlin in Hauke Heekeren's group,
+                        funded by the <a href="http://www.mind-and-brain.de/people/doctoral-alumni/" target="_blank"
+                            rel="noopener" class="text-cyan-600 hover:text-accent-blue">Berlin School of Mind and
+                            Brain</a>. My Master's program included work with Ray Dolan and supervision by <a
+                            href="http://affectivebrain.com/?page_id=2706" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue">Tali Sharot</a>. I hold a Bachelor's in
+                        Biomedicine from the University of Würzburg.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/Lisa.jpg" alt="Lisa Doppelhofer"
+                        class="w-48 h-auto mb-4 object-cover">
+                    <h2 class="text-2xl font-bold text-center mb-2">Lisa Doppelhofer</h2>
+                    <p class="text-gray-600 text-center mb-4">Graduate Student</p>
+                    <p class="text-sm mb-4 text-justify">I study social preferences and decision-making, focusing on how
+                        humans make optimal choices in social tasks and share payoffs. My PhD research also examines why
+                        borderline personality disorder patients struggle with cooperation, using game theory,
+                        computational modeling, and fMRI.
+
+                        Previously, I earned an MSc in Psychology (Mind and Brain Track) from the University of Vienna,
+                        where I researched placebo and nocebo effects on reinforcement learning at the <a
+                            href="https://scan-psy.univie.ac.at" target="_blank" rel="noopener">SCAN-Unit</a> under <a
+                            href="https://scan-psy.univie.ac.at/about-us/" target="_blank" rel="noopener">Isabella
+                            Wagner and Claus Lamm</a>.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/sihui.jpg" alt="Christoph Korn"
+                        class="w-48 h-auto mb-4 object-cover">
+                    <h2 class="text-2xl font-bold text-center mb-2">Sihui Zhang (张思慧)</h2>
+                    <p class="text-gray-600 text-center mb-4">Graduate Student</p>
+                    <p class="text-sm mb-4 text-justify">Before joining the DNHI-lab, I earned an MSc in Psychology at
+                        Beijing Normal University, studying the impact of emotions on prosocial behavior under Chao Liu.
+
+                        In the DHNI-lab, I will use behavioral testing, computational modeling, and fMRI to investigate
+                        how people make allocation decisions in cooperation, focusing on differences in individuals with
+                        adverse childhood experiences.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/sergej.jpg" alt="Christoph Korn"
+                        class="w-48 h-auto mb-4 object-cover">
+                    <h2 class="text-2xl font-bold text-center mb-2">Sergej Golowin</h2>
+                    <p class="text-gray-600 text-center mb-4">Graduate Student</p>
+                    <p class="text-sm mb-4 text-justify">As a researcher focused on the pragmatic evolution of the human
+                        mind, I'm investigating the trade-off between robust and flexible decision strategies in our
+                        cognitive processes. My PhD work involves using foraging decision games with competing rules to
+                        study meta decision-making, employing both computational models for behavioral analysis and fMRI
+                        for neural insights. This research aims to shed light on psychiatric conditions like borderline
+                        personality disorder. My background includes an MSc from Taipei Medical University's
+                        International Graduate Program in Medicine, where I explored foraging decision-making under
+                        predation risk. Now at the DNHI-lab, I'm continuing to delve into the functional characteristics
+                        of the human brain, seeking to uncover the evolutionary circumstances that shaped our cognitive
+                        abilities.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 5 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2023/05/brain_image.png" alt="Xiong Hu (胡雄)"
+                        class="w-48 h-auto mb-4 object-cover">
+                    <h2 class="text-2xl font-bold text-center mb-2">Xiong Hu (胡雄)</h2>
+                    <p class="text-gray-600 text-center mb-4">Graduate Student</p>
+                    <p class="text-sm mb-4 text-justify">Before joining the DNHI lab, I earned my Bachelor's in
+                        Psychology from Hubei University and my Master's in Psychology from Capital Normal University.
+                        During my Master's, I worked in Wang Yan's Optimism Lab, initially focusing on dispositional
+                        optimism before shifting to an interest in unrealistic optimism/optimism bias. I conducted two
+                        behavioral studies on how feedback providers' warmth and competence affect receivers' optimism
+                        bias.
+                        For my doctoral research, I will use behavioral testing, computational modeling, eye tracking,
+                        and neuroimaging to explore how to enhance optimism bias in social interactions. I also aim to
+                        refine psychometric tests and develop a practical tool for measuring optimism bias, with
+                        additional research in design and environmental psychology.
+                        In my free time, I enjoy cooking, hiking, and flaneuring, with a particular skill in Chinese
+                        cuisine. I also play the guitar and am optimistic about improving my skills with my Fender
+                        Telecaster.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 6 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2023/05/photo_ismail_small.jpg"
+                        alt="Dr. Ismail Guennouni" class="w-48 h-auto mb-4 object-cover">
+                    <h2 class="text-2xl font-bold text-center mb-2">Dr. Ismail Guennouni</h2>
+                    <p class="text-gray-600 text-center mb-4">AIH Postdoctoral Fellow</p>
+                    <p class="text-sm mb-4 text-justify">I am a Postdoctoral fellow at the AI Health Innovation Cluster,
+                        working with the University of Heidelberg and the Z.I Mannheim to develop computational models
+                        of social interactions for adaptive gamified treatment approaches. I hold an MSc in Cognitive
+                        and Decision Sciences and an MRes in Computer Science (Machine Learning) from University College
+                        London, and a PhD in Experimental Psychology, specializing in experimental and computational
+                        approaches to strategic social interaction.
+
+                        My research focuses on social learning in mental health disorders, particularly exploring how
+                        cognitive interventions from leading psychotherapies can be integrated with computational
+                        behavior models to address social learning dysfunction.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 7 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2023/05/brain_image.png" alt="Raphael Perla"
+                        class="w-48 h-auto mb-4 object-cover">
+                    <h2 class="text-2xl font-bold text-center mb-2">Raphael Perla</h2>
+                    <p class="text-gray-600 text-center mb-4">Graduate Student</p>
+                    <p class="text-sm mb-4 text-justify">I also do things.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 8 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2023/05/brain_image.png"
+                        alt="Jiatong Liu (刘嘉桐)" class="w-48 h-auto mb-4 object-cover">
+                    <h2 class="text-2xl font-bold text-center mb-2">Jiatong Liu (刘嘉桐)</h2>
+                    <p class="text-gray-600 text-center mb-4">Graduate Student</p>
+                    <p class="text-sm mb-4 text-justify">I am curious about how humans navigate social landscapes under
+                        uncertainty. Specifically, I am interested in decision-making strategies during social
+                        interactions and the computational mechanisms behind them. In the DHNI lab, I will focus on
+                        cognitive neutrality in social decisions by implementing novel behavioral tasks and
+                        computational models based on reinforcement learning.
+
+                        Before joining the DHNI lab, I completed my MSc in Neural and Behavioral Sciences at the
+                        Eberhard Karls University of Tübingen. For my Master’s thesis, I worked on large-scale
+                        correlations of cortical spiking activity under the supervision of Prof. Markus Siegel.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 9 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2023/05/brain_image.png" alt="Mariana"
+                        class="w-48 h-auto mb-4 object-cover">
+                    <h2 class="text-2xl font-bold text-center mb-2">Mariana</h2>
+                    <p class="text-gray-600 text-center mb-4">Graduate Student</p>
+                    <p class="text-sm mb-4 text-justify">TODO</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 9 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2023/05/brain_image.png" alt="Eliana Runza"
+                        class="w-48 h-auto mb-4 object-cover">
+                    <h2 class="text-2xl font-bold text-center mb-2">Eliana Runza</h2>
+                    <p class="text-gray-600 text-center mb-4">Secretary</p>
+                    <p class="text-sm mb-4 text-justify">All-round talent</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-orcid"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-accent-blue"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 py-6 text-center text-sm text-gray-600">
+            © 2024 DNHI Lab. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

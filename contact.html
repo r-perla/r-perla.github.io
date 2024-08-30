@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DNHI Lab - Home</title>
+    <link rel="icon" href="http://www.dnhi-lab.org/wp-content/uploads/2021/08/icons8-brain-64.png" sizes="32x32">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Roboto', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+                    },
+                    colors: {
+                        'accent-blue': '#3B82F6', // Complementary blue for accents
+                        'light-gray': '#F3F4F6',  // Lighter background for better contrast
+                    }
+                },
+            },
+        }
+    </script>
+        <style>
+            [x-cloak] { display: none !important; }
+        </style>
+</head>
+
+<body class="bg-light-gray text-gray-800 font-sans">
+    <!-- Banner (hidden on mobile) -->
+    <div class="hidden md:block bg-white py-4">
+        <div class="container mx-auto px-4 flex justify-center items-center">
+            <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/icons8-brain-64.png" alt="Brain Icon" class="h-12 w-12 mr-4">
+            <div class="text-center">
+                <h1 class="text-2xl font-bold text-cyan-600">DECISION NEUROSCIENCE OF HUMAN INTERACTIONS</h1>
+                <p class="text-sm text-gray-600">Lab at Heidelberg University</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header x-data="{ isOpen: false }" class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <!-- Mobile logo (visible only on mobile) -->
+            <div class="flex items-center md:hidden">
+                <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/icons8-brain-64.png" alt="Brain Icon" class="h-8 w-8 mr-2">
+                <span class="text-lg font-bold text-cyan-600">DNHI Lab</span>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button @click="isOpen = !isOpen" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Navigation -->
+            <nav :class="{'flex': isOpen, 'hidden': !isOpen}" class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center" x-cloak>
+                <a href="index.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Home</a>
+                <a href="research.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Research</a>
+                <a href="people.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">People</a>
+                <a href="publications.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
+                <a href="teaching.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Teaching</a>
+                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open Positions</a>
+                <a href="contact.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 pt-24 pb-12">
+        <section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-cyan-600 mb-6">Mail</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Heike Hager (secretary) 
+                <a href="mailto:HeikeMaria.Hager@med.uni-heidelberg.de">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/email-1-300x300.png" alt="Email Icon" class="inline-block w-9 h-9 align-middle">
+                </a>
+            </p>
+            <p class="text-lg leading-relaxed mb-8">
+                Christoph Korn (PI) 
+                <a href="mailto:christoph.korn@med.uni-heidelberg.de">
+                    <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/email-1-300x300.png" alt="Email Icon" class="inline-block w-9 h-9 align-middle">
+                </a>
+            </p>
+        
+            <h2 class="text-2xl font-bold text-cyan-600 mb-6">Weekly Meeting</h2>
+            <p class="text-lg leading-relaxed mb-8">
+                We host a weekly lab meeting (Tuesdays at 2 pm) to discuss ongoing projects as well as relevant methods, theories, and papers. We are more than happy to welcome guests! If you are interested in giving a presentation, asking questions, or joining our discussions, feel free to contact us. At the moment, the meeting is usually in a hybrid format (partly in person and partly online).
+            </p>
+        
+            <h2 class="text-2xl font-bold text-cyan-600 mb-6">Join Us</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                We are looking for people at all levels:
+            </p>
+            <ul class="list-disc list-inside mb-8 text-lg leading-relaxed">
+                <li>Student assistants ("Hiwis," "studentische Hilfskräfte") or interns</li>
+                <li>Bachelor or Master students</li>
+                <li>Students who want to pursue a PhD or a medical doctorate (MD)</li>
+                <li>Postdocs</li>
+            </ul>
+            <p class="text-lg leading-relaxed mb-8">
+                Please indicate in your email your interests, your experience, and your skills. We also support people applying for their own funding. Possible funding options include Marie Curie schemes or the new 
+                <a href="https://www.dfg.de/en/research_funding/programmes/individual/walter_benjamin/index.html" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">DFG program Walter Benjamin</a>. Our research focuses on cognitive neuroscience but overlaps with many different research areas (e.g., game theory, evolutionary biology), so people from other backgrounds (e.g., physics, maths, computer science, biology) are also encouraged to apply.
+            </p>
+        
+            <h2 class="text-2xl font-bold text-cyan-600 mb-6">Virtual Address</h2>
+            <p class="text-lg leading-relaxed mb-8">
+                Link to our homepage at 
+                <a href="https://www.klinikum.uni-heidelberg.de/en/center-for-psychosocial-medicine-zpm/department-of-general-psychiatry/about-us/section/section-social-neuroscience" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Heidelberg University</a>.
+            </p>
+        
+            <h2 class="text-2xl font-bold text-cyan-600 mb-6">Physical Address for Mail</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                <em>English:</em> Section Social Neuroscience, Department of General Adult Psychiatry, Heidelberg University Hospital, Voßstraße 4, 69115 Heidelberg, Germany
+            </p>
+            <p class="text-lg leading-relaxed mb-8">
+                <em>German:</em> Sektion Soziale Neurowissenschaften, Klinik für Allgemeine Psychiatrie, Universitätsklinikum Heidelberg, Voßstraße 4, 69115 Heidelberg
+            </p>
+        
+            <h2 class="text-2xl font-bold text-cyan-600 mb-6">Physical Address for Visits</h2>
+            <p class="text-lg leading-relaxed mb-2">
+                <strong>Voßstraße 9</strong> corner with Thibautstraße, 69115 Heidelberg
+            </p>
+            <p class="text-lg leading-relaxed mb-2">
+                Building with the old logo "Frauen-Klinik"
+            </p>
+            <p class="text-lg leading-relaxed mb-8">
+                Take the main stairs up to the second floor. Two turns to the left.
+            </p>
+            <img src="http://www.dnhi-lab.org/wp-content/uploads/2023/06/IMG_9111-300x225.jpg" alt="Building" class="w-full h-auto rounded-md shadow mb-8">
+        
+            <div x-data="{ open: false }" class="bg-gray-100 p-4 rounded-lg">
+                <h4 @click="open = !open" class="text-lg font-bold text-cyan-600 cursor-pointer">Haftungsausschluss</h4>
+                <div x-show="open" class="mt-4 text-sm leading-relaxed text-gray-700 space-y-4">
+                    <p><strong>Haftung für Inhalte</strong></p>
+                    <p>
+                        Die Inhalte unserer Seiten werden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+                    </p>
+                    <p>
+                        Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                    </p>
+                    <p><strong>Haftung für Links</strong></p>
+                    <p>
+                        Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+                    </p>
+                    <p>
+                        Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                    </p>
+                    <p><strong>Urheberrecht</strong></p>
+                    <p>
+                        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+                    </p>
+                    <p>
+                        Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                    </p>
+                    <p><strong>Datenschutz</strong></p>
+                    <p>
+                        Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+                    </p>
+                    <p>
+                        Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+                    </p>
+                    <p>
+                        Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+                    </p>
+                </div>
+                <button @click="open = !open" class="mt-4 text-cyan-600 hover:text-accent-blue underline">
+                    <span x-show="!open">Show more</span>
+                    <span x-show="open" style="display:none">Show less</span>
+                </button>
+            </div>
+        </section>        
+    </main>
+
+    <footer class="bg-gray-100 border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 py-6 text-center text-sm text-gray-600">
+            © 2024 DNHI Lab. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

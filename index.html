@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DNHI Lab - Home</title>
+    <link rel="icon" href="http://www.dnhi-lab.org/wp-content/uploads/2021/08/icons8-brain-64.png" sizes="32x32">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Roboto', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+                    },
+                    colors: {
+                        'accent-blue': '#0c4a6e',
+                        'light-gray': '#F3F4F6',  // Lighter background for better contrast
+                    }
+                },
+            },
+        }
+    </script>
+        <style>
+            [x-cloak] { display: none !important; }
+        </style>
+</head>
+
+<body class="bg-light-gray text-gray-800 font-sans">
+    <!-- Banner (hidden on mobile) -->
+    <div class="hidden md:block bg-white py-4">
+        <div class="container mx-auto px-4 flex justify-center items-center">
+            <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/icons8-brain-64.png" alt="Brain Icon" class="h-12 w-12 mr-4">
+            <div class="text-center">
+                <h1 class="text-2xl font-bold text-cyan-600">DECISION NEUROSCIENCE OF HUMAN INTERACTIONS</h1>
+                <p class="text-sm text-gray-600">Lab at Heidelberg University</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header x-data="{ isOpen: false }" class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <!-- Mobile logo (visible only on mobile) -->
+            <div class="flex items-center md:hidden">
+                <img src="http://www.dnhi-lab.org/wp-content/uploads/2021/08/icons8-brain-64.png" alt="Brain Icon" class="h-8 w-8 mr-2">
+                <span class="text-lg font-bold text-cyan-600">DNHI Lab</span>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button @click="isOpen = !isOpen" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Navigation -->
+            <nav :class="{'flex': isOpen, 'hidden': !isOpen}" class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center" x-cloak>
+                <a href="index.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Home</a>
+                <a href="research.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Research</a>
+                <a href="people.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">People</a>
+                <a href="publications.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
+                <a href="teaching.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Teaching</a>
+                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open Positions</a>
+                <a href="contact.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 pt-24 pb-12">
+        <section class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-extrabold text-cyan-600 mb-6">Home</h1>
+
+            <p class="text-lg mb-8 leading-relaxed">
+                Welcome to the homepage of our research group headed by Christoph W. Korn at Heidelberg University,
+                Germany (<a
+                    href="https://www.klinikum.uni-heidelberg.de/en/center-for-psychosocial-medicine-zpm/department-of-general-psychiatry/about-us/section/section-social-neuroscience"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Section Social
+                    Neuroscience</a>, Department of General Adult Psychiatry). We are investigating the <strong>D</strong>ecision <strong>N</strong>euroscience of <strong>H</strong>uman <strong>I</strong>nteractions with the goal to address the following broad questions:
+            </p>
+
+            <div x-data="{ currentSlide: 0 }" class="relative mb-12 bg-gray-50 rounded-lg shadow-lg p-6">
+                <div class="space-y-8">
+                    <template x-for="(slide, index) in [
+                        { img: 'http://www.dnhi-lab.org/wp-content/uploads/2023/05/web_fig3_v1_small.png', questions: ['How do humans make <strong>social decisions</strong>?', 'How do they <strong>learn about each other</strong>?'] },
+                        { img: 'http://www.dnhi-lab.org/wp-content/uploads/2023/05/web_fig4_v1_small.png', questions: ['What are the <strong>neural underpinnings</strong> of such decision-making and learning processes?', 'How can we devise <strong>computational models</strong>?'] },
+                        { img: 'http://www.dnhi-lab.org/wp-content/uploads/2023/05/web_fig5_v1_small.png', questions: ['How do these processes differ in individuals suffering from <strong>psychiatric disorders</strong>?', 'How can we develop new <strong>diagnostic and therapeutic tools</strong>?'] }
+                    ]" :key="index">
+                        <div x-show="currentSlide === index" class="space-y-4">
+                            <div class="max-w-md mx-auto">
+                                <img :src="slide.img" :alt="'Research question ' + (index + 1)"
+                                    class="w-full h-auto rounded-md shadow">
+                            </div>
+                            <div class="space-y-2 text-center">
+                                <template x-for="question in slide.questions">
+                                    <p class="text-lg font-semibold text-cyan-600" x-html="question"></p>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                <button @click="currentSlide = (currentSlide - 1 + 3) % 3"
+                    class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-accent-blue text-white p-2 rounded-full shadow hover:bg-cyan-700 transition duration-150">&lt;</button>
+                <button @click="currentSlide = (currentSlide + 1) % 3"
+                    class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-accent-blue text-white p-2 rounded-full shadow hover:bg-cyan-700 transition duration-150">&gt;</button>
+            </div>
+
+            <p class="text-lg mb-4 leading-relaxed">
+                Our research projects combine <strong>computational modeling</strong> of behavioral data, model-based
+                and
+                multivariate analyses of <strong>fMRI data</strong>, <strong>pupillometry</strong>, evolutionary game
+                theory,
+                virtual reality, etc. We are strongly committed to <strong>open science</strong> (e.g., sharing
+                data/code and
+                preregistering our studies).
+            </p>
+            <p class="text-lg mb-4 leading-relaxed">
+                The group is funded to a large degree by an <a
+                    href="https://gepris.dfg.de/gepris/projekt/392443797?language=en" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Emmy Noether research grant</a> of the German
+                Research Foundation (DFG) and started at the
+                <a href="https://www.uke.de/kliniken-institute/institute/systemische-neurowissenschaften/team/christoph-w.-korn.html"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Institute of
+                    Systems Neuroscience</a> (University Medical Center Hamburg-Eppendorf, UKE,
+                Hamburg, Germany).
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 py-6 text-center text-sm text-gray-600">
+            © 2024 DNHI Lab. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
