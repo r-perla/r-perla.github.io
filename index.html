@@ -28,9 +28,11 @@
             },
         }
     </script>
-        <style>
-            [x-cloak] { display: none !important; }
-        </style>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body class="bg-light-gray text-gray-800 font-sans">
@@ -53,22 +55,27 @@
                 <img src="img/old_logo.png" alt="Brain Icon" class="h-8 w-8 mr-2">
                 <span class="text-lg font-bold text-cyan-600">DNHI Lab</span>
             </div>
-            
+
             <!-- Mobile menu button -->
             <button @click="isOpen = !isOpen" class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
 
             <!-- Navigation -->
-            <nav :class="{'flex': isOpen, 'hidden': !isOpen}" class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center" x-cloak>
+            <nav :class="{'flex': isOpen, 'hidden': !isOpen}"
+                class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center"
+                x-cloak>
                 <a href="index.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Home</a>
                 <a href="research.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Research</a>
                 <a href="people.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">People</a>
-                <a href="publications.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
+                <a href="publications.html"
+                    class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
                 <a href="teaching.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Teaching</a>
-                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open Positions</a>
+                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open
+                    Positions</a>
                 <a href="contact.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Contact</a>
             </nav>
         </div>
@@ -83,7 +90,9 @@
                 Germany (<a
                     href="https://www.klinikum.uni-heidelberg.de/en/center-for-psychosocial-medicine-zpm/department-of-general-psychiatry/about-us/section/section-social-neuroscience"
                     target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Section Social
-                    Neuroscience</a>, Department of General Adult Psychiatry). We are investigating the <strong>D</strong>ecision <strong>N</strong>euroscience of <strong>H</strong>uman <strong>I</strong>nteractions with the goal to address the following broad questions:
+                    Neuroscience</a>, Department of General Adult Psychiatry). We are investigating the
+                <strong>D</strong>ecision <strong>N</strong>euroscience of <strong>H</strong>uman
+                <strong>I</strong>nteractions with the goal to address the following broad questions:
             </p>
 
             <div x-data="{ currentSlide: 0 }" class="relative mb-12 bg-gray-50 rounded-lg shadow-lg p-6">

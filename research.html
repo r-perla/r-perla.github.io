@@ -28,9 +28,11 @@
             },
         }
     </script>
-        <style>
-            [x-cloak] { display: none !important; }
-        </style>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body class="bg-light-gray text-gray-800 font-sans">
@@ -53,22 +55,27 @@
                 <img src="img/old_logo.png" alt="Brain Icon" class="h-8 w-8 mr-2">
                 <span class="text-lg font-bold text-cyan-600">DNHI Lab</span>
             </div>
-            
+
             <!-- Mobile menu button -->
             <button @click="isOpen = !isOpen" class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
 
             <!-- Navigation -->
-            <nav :class="{'flex': isOpen, 'hidden': !isOpen}" class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center" x-cloak>
+            <nav :class="{'flex': isOpen, 'hidden': !isOpen}"
+                class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center"
+                x-cloak>
                 <a href="index.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Home</a>
                 <a href="research.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Research</a>
                 <a href="people.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">People</a>
-                <a href="publications.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
+                <a href="publications.html"
+                    class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
                 <a href="teaching.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Teaching</a>
-                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open Positions</a>
+                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open
+                    Positions</a>
                 <a href="contact.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Contact</a>
             </nav>
         </div>
@@ -78,28 +85,41 @@
         <section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
             <h2 class="text-2xl font-bold text-cyan-600 mb-6">A Multimodal Approach to Social Cooperation</h2>
             <p class="mb-8 text-lg leading-relaxed">
-                We are investigating three aspects of social cooperation within the framework of the Emmy-Noether research group.
-                We are particularly interested in how these processes go awry in individuals with <strong>personality disorders</strong>. 
+                We are investigating three aspects of social cooperation within the framework of the Emmy-Noether
+                research group.
+                We are particularly interested in how these processes go awry in individuals with <strong>personality
+                    disorders</strong>.
                 We aim at developing comprehensive <strong>neuro-computational models</strong>.
             </p>
-        
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <img src="img/fig2.png" alt="" class="w-full h-auto rounded-md shadow">
                     <p class="mt-4 text-lg leading-relaxed">
-                        Before cooperating, humans usually <strong>learn about each others’ personality by generalizing across similar traits</strong>.
+                        Before cooperating, humans usually <strong>learn about each others’ personality by generalizing
+                            across similar traits</strong>.
                     </p>
                     <p class="mt-2 text-lg leading-relaxed">
-                        We have devised novel <strong>reinforcement learning (RL)</strong> models that capture how people generalize with different levels of granularity and references points (<a href="https://www.nature.com/articles/s41467-022-33418-2" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Frolichs, Rosenblau & Korn, 2023</a>).
+                        We have devised novel <strong>reinforcement learning (RL)</strong> models that capture how
+                        people generalize with different levels of granularity and references points (<a
+                            href="https://www.nature.com/articles/s41467-022-33418-2" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">Frolichs, Rosenblau & Korn,
+                            2023</a>).
                     </p>
                 </div>
                 <div>
                     <img src="img/fig4.png" alt="" class="w-full h-auto rounded-md shadow">
                     <p class="mt-4 text-lg leading-relaxed">
-                        The basic problems of cooperation itself are encapsulated in the prisoner’s dilemma. Mutual cooperation yields the best joint payoff but unilateral defection is tempting.
+                        The basic problems of cooperation itself are encapsulated in the prisoner’s dilemma. Mutual
+                        cooperation yields the best joint payoff but unilateral defection is tempting.
                     </p>
                     <p class="mt-2 text-lg leading-relaxed">
-                        Ongoing studies aim at <strong>modelling cooperative decisions in stylized as well as ecologically valid games</strong> (e.g., Kuper-Smith & Korn, <a href="https://psyarxiv.com/5jxrf/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">preprint1</a>, <a href="https://psyarxiv.com/4me3h/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">preprint2</a>).
+                        Ongoing studies aim at <strong>modelling cooperative decisions in stylized as well as
+                            ecologically valid games</strong> (e.g., Kuper-Smith & Korn, <a
+                            href="https://psyarxiv.com/5jxrf/" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">preprint1</a>, <a
+                            href="https://psyarxiv.com/4me3h/" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">preprint2</a>).
                     </p>
                 </div>
                 <div>
@@ -108,106 +128,181 @@
                         Once cooperation is established, partners have to decide how to share the benefits.
                     </p>
                     <p class="mt-2 text-lg leading-relaxed">
-                        Initial studies <strong>model social value orientation in such allocation decisions</strong> and show the involvement of the amygdala (<a href="https://www.sciencedirect.com/science/article/pii/S0028393221002694" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Doppelhofer et al., 2021</a>).
+                        Initial studies <strong>model social value orientation in such allocation decisions</strong> and
+                        show the involvement of the amygdala (<a
+                            href="https://www.sciencedirect.com/science/article/pii/S0028393221002694" target="_blank"
+                            rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Doppelhofer et al.,
+                            2021</a>).
                     </p>
                 </div>
             </div>
-        
+
             <p class="text-lg leading-relaxed">
-                These projects combine the topics listed below. All projects benefit from close interactions within the Department of General Adult Psychiatry and in particular with <a href="https://www.klinikum.uni-heidelberg.de/Persoenlichkeitsstoerungen.118031.0.html" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Sabine Herpertz</a> and her lab. 
-                We closely collaborate with the lab of <a href="http://www.glascherlab.org/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Jan Gläscher</a> at the 
-                <a href="https://www.uke.de/kliniken-institute/institute/systemische-neurowissenschaften/team/christoph-w.-korn.html" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Institute of Systems Neuroscience</a> (University Medical Center Hamburg-Eppendorf, UKE). 
-                <a href="https://autism.gwu.edu/gabriela-rosenblau" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Gabriela Rosenblau</a> at George Washington University (Washington, DC) collaborates on projects involving social learning.
+                These projects combine the topics listed below. All projects benefit from close interactions within the
+                Department of General Adult Psychiatry and in particular with <a
+                    href="https://www.klinikum.uni-heidelberg.de/Persoenlichkeitsstoerungen.118031.0.html"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Sabine
+                    Herpertz</a> and her lab.
+                We closely collaborate with the lab of <a href="http://www.glascherlab.org/" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Jan Gläscher</a> at the
+                <a href="https://www.uke.de/kliniken-institute/institute/systemische-neurowissenschaften/team/christoph-w.-korn.html"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Institute of
+                    Systems Neuroscience</a> (University Medical Center Hamburg-Eppendorf, UKE).
+                <a href="https://autism.gwu.edu/gabriela-rosenblau" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Gabriela Rosenblau</a> at George Washington
+                University (Washington, DC) collaborates on projects involving social learning.
             </p>
         </section>
-        
+
         <section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
             <h2 class="text-2xl font-bold text-cyan-600 mb-6">Heuristic Versus Optimal Decision-Making and Learning</h2>
             <p class="text-lg leading-relaxed mb-8">
-                We are interested in understanding how <strong>humans combine myopic heuristic and rationally optimal policies</strong>. Such optimal policies necessitate integrating over multiple future time steps and across multiple social settings. We develop complex decision-making and learning tasks and models based on <strong>Reinforcement Learning (RL)</strong> and in particular based on <strong>Markov Decision Processes (MDPs)</strong>.
+                We are interested in understanding how <strong>humans combine myopic heuristic and rationally optimal
+                    policies</strong>. Such optimal policies necessitate integrating over multiple future time steps and
+                across multiple social settings. We develop complex decision-making and learning tasks and models based
+                on <strong>Reinforcement Learning (RL)</strong> and in particular based on <strong>Markov Decision
+                    Processes (MDPs)</strong>.
             </p>
             <div x-data="{ open: false }">
                 <button @click="open = !open" class="text-cyan-600 hover:text-accent-blue underline">Read More</button>
                 <div x-show="open" class="mt-4">
                     <p class="text-lg leading-relaxed mb-4">
-                        Results of studies from Christoph’s postdoc at the University of Zurich provide evidence for a trade-off between heuristic and optimal decision policies, which relate to activity in the <strong>medial prefrontal cortex</strong> (Korn & Bach, <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004301" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">2015</a>; 
-                        <a href="https://www.nature.com/articles/s41467-017-02750-3" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">2018</a>, 
-                        <a href="https://www.nature.com/articles/s41562-019-0603-9.epdf?author_access_token=8rif1pR8SkQ1VY_ZLihQS9RgN0jAjWel9jnR3ZoTv0MREtm8eMNv_0_MyGq2KmyhWBI8OaxHbLxLVEQ-eYqizjhItbBa6tQavPaAjmav_w9MccgUqdovp-oxZuMHuHLAilB9pVpOeloWhHHcosfsgA%3D%3D" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">2019</a>). 
-                        Such multi-step decisions play an integral role in many <strong>approach-avoidance conflicts</strong>, which are sensitive to anxiolytic medication and lesions of the amygdala and the hippocampus 
-                        (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2017_Korn_Biol_Psych_lora_lesion.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al., 2017</a>).
+                        Results of studies from Christoph’s postdoc at the University of Zurich provide evidence for a
+                        trade-off between heuristic and optimal decision policies, which relate to activity in the
+                        <strong>medial prefrontal cortex</strong> (Korn & Bach, <a
+                            href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004301"
+                            target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">2015</a>;
+                        <a href="https://www.nature.com/articles/s41467-017-02750-3" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">2018</a>,
+                        <a href="https://www.nature.com/articles/s41562-019-0603-9.epdf?author_access_token=8rif1pR8SkQ1VY_ZLihQS9RgN0jAjWel9jnR3ZoTv0MREtm8eMNv_0_MyGq2KmyhWBI8OaxHbLxLVEQ-eYqizjhItbBa6tQavPaAjmav_w9MccgUqdovp-oxZuMHuHLAilB9pVpOeloWhHHcosfsgA%3D%3D"
+                            target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">2019</a>).
+                        Such multi-step decisions play an integral role in many <strong>approach-avoidance
+                            conflicts</strong>, which are sensitive to anxiolytic medication and lesions of the amygdala
+                        and the hippocampus
+                        (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2017_Korn_Biol_Psych_lora_lesion.pdf"
+                            target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn
+                            et al., 2017</a>).
                     </p>
                 </div>
             </div>
         </section>
-        
+
         <section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-cyan-600 mb-6">Apparent Biases in (Non-)Social Information Processing</h2>
+            <h2 class="text-2xl font-bold text-cyan-600 mb-6">Apparent Biases in (Non-)Social Information Processing
+            </h2>
             <p class="text-lg leading-relaxed mb-8">
-                Studies from Christoph’s Master’s thesis in London and his PhD in Berlin demonstrate that humans process <strong>self-relevant information about their future and their character in an apparently positively biased way</strong> 
-                (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2011_Sharot_Korn_NN_optimism.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Sharot*, Korn*, Dolan, 2011</a>; 
-                <a href="https://www.jneurosci.org/content/32/47/16832.short" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al., 2012</a>).
-                These self-related positivity biases are reduced in individuals with <strong>psychiatric disorders</strong>, i.e., with <strong>depression</strong> 
-                (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2014_Korn_Sharot_Psych_Med_depression_optimism.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn*, Sharot* et al., 2014</a>) and <strong>borderline personality disorder</strong> 
-                (<a href="https://www.cambridge.org/core/journals/psychological-medicine/article/social-feedback-processing-in-borderline-personality-disorder/66ACFEEE462DD22086E24BE38E3E67B6" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al., 2016a</a>, 
-                <a href="https://www.sciencedirect.com/science/article/pii/S0165178116302542" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">2016b</a>).
+                Studies from Christoph’s Master’s thesis in London and his PhD in Berlin demonstrate that humans process
+                <strong>self-relevant information about their future and their character in an apparently positively
+                    biased way</strong>
+                (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2011_Sharot_Korn_NN_optimism.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Sharot*,
+                    Korn*, Dolan, 2011</a>;
+                <a href="https://www.jneurosci.org/content/32/47/16832.short" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Korn et al., 2012</a>).
+                These self-related positivity biases are reduced in individuals with <strong>psychiatric
+                    disorders</strong>, i.e., with <strong>depression</strong>
+                (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2014_Korn_Sharot_Psych_Med_depression_optimism.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn*, Sharot*
+                    et al., 2014</a>) and <strong>borderline personality disorder</strong>
+                (<a href="https://www.cambridge.org/core/journals/psychological-medicine/article/social-feedback-processing-in-borderline-personality-disorder/66ACFEEE462DD22086E24BE38E3E67B6"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al.,
+                    2016a</a>,
+                <a href="https://www.sciencedirect.com/science/article/pii/S0165178116302542" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">2016b</a>).
             </p>
             <div x-data="{ open: false }">
                 <button @click="open = !open" class="text-cyan-600 hover:text-accent-blue underline">Read More</button>
                 <div x-show="open" class="mt-4">
                     <p class="text-lg leading-relaxed mb-4">
-                        In additional studies, we specified some of the boundary conditions for other types of apparent decision biases, namely <strong>self-related attributions</strong> 
-                        (<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0148581" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn*, Rosenblau* et al., 2016</a>) and <strong>framing effects</strong> 
-                        (<a href="https://psycnet.apa.org/record/2015-27292-001" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Oganian*, Korn*, Heekeren, 2016</a>; 
-                        <a href="https://journals.sagepub.com/doi/abs/10.1177/1747021818769259" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al., 2018</a>; 
-                        <a href="https://journals.sagepub.com/doi/abs/10.1177/1747021818774789" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Oganian, Heekeren, Korn, 2018</a>).
+                        In additional studies, we specified some of the boundary conditions for other types of apparent
+                        decision biases, namely <strong>self-related attributions</strong>
+                        (<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0148581"
+                            target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn*,
+                            Rosenblau* et al., 2016</a>) and <strong>framing effects</strong>
+                        (<a href="https://psycnet.apa.org/record/2015-27292-001" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">Oganian*, Korn*, Heekeren, 2016</a>;
+                        <a href="https://journals.sagepub.com/doi/abs/10.1177/1747021818769259" target="_blank"
+                            rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al., 2018</a>;
+                        <a href="https://journals.sagepub.com/doi/abs/10.1177/1747021818774789" target="_blank"
+                            rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Oganian, Heekeren,
+                            Korn, 2018</a>).
                     </p>
                     <p class="text-lg leading-relaxed mb-4">
-                        In his <a href="http://www.dnhi-lab.org/wp-content/uploads/2021/08/Korn_2013_Dissertation.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PhD thesis</a>, Christoph developed a neurocognitive model that relates this type of biased information processing to the neural processing of <strong>social rewards and mentalizing</strong> 
-                        (<a href="https://www.jneurosci.org/content/32/47/16832.short" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al., 2012</a>; 
-                        <a href="https://www.frontiersin.org/articles/10.3389/fnhum.2014.00192/full" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al., 2014</a>).
+                        In his <a href="http://www.dnhi-lab.org/wp-content/uploads/2021/08/Korn_2013_Dissertation.pdf"
+                            target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PhD
+                            thesis</a>, Christoph developed a neurocognitive model that relates this type of biased
+                        information processing to the neural processing of <strong>social rewards and
+                            mentalizing</strong>
+                        (<a href="https://www.jneurosci.org/content/32/47/16832.short" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">Korn et al., 2012</a>;
+                        <a href="https://www.frontiersin.org/articles/10.3389/fnhum.2014.00192/full" target="_blank"
+                            rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al.,
+                            2014</a>).
                     </p>
                 </div>
             </div>
         </section>
-        
+
         <section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
             <h2 class="text-2xl font-bold text-cyan-600 mb-6">Multimodal Integration, RSA, and DNNs</h2>
             <p class="text-lg leading-relaxed mb-8">
-                In ongoing collaborative projects with colleagues from Hamburg, we harness <strong>Representational Similarity Analyses (RSA)</strong> of fMRI data and <strong>Deep Neural Networks (DNNs)</strong> to investigate how the human brain integrates multimodal stimuli 
-                (<a href="http://www.dnhi-lab.org/wp-content/uploads/2021/08/Korn_2021_Brain2AI_ICLR_Cross-modal_emotion_DNNs_fMRI.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al., 2021</a>).
+                In ongoing collaborative projects with colleagues from Hamburg, we harness <strong>Representational
+                    Similarity Analyses (RSA)</strong> of fMRI data and <strong>Deep Neural Networks (DNNs)</strong> to
+                investigate how the human brain integrates multimodal stimuli
+                (<a href="http://www.dnhi-lab.org/wp-content/uploads/2021/08/Korn_2021_Brain2AI_ICLR_Cross-modal_emotion_DNNs_fMRI.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn et al.,
+                    2021</a>).
             </p>
             <div x-data="{ open: false }">
                 <button @click="open = !open" class="text-cyan-600 hover:text-accent-blue underline">Read More</button>
                 <div x-show="open" class="mt-4">
                     <p class="text-lg leading-relaxed mb-4">
-                        Specifically, we obtained fMRI data from human participants presented with 72 audio-visual stimuli of actors/actresses depicting six different emotions. The same stimuli were classified with high accuracy in our pre-trained DNNs built according to a cross-channel convolutional architecture. 
-                        Inspired by recent studies using RSA for uni-modal stimuli, we assessed the similarities between the layers of the DNN and the fMRI data. As hypothesized, we identified gradients in pattern similarities along the different layers of the auditory, visual, and cross-modal channels of the DNNs.
+                        Specifically, we obtained fMRI data from human participants presented with 72 audio-visual
+                        stimuli of actors/actresses depicting six different emotions. The same stimuli were classified
+                        with high accuracy in our pre-trained DNNs built according to a cross-channel convolutional
+                        architecture.
+                        Inspired by recent studies using RSA for uni-modal stimuli, we assessed the similarities between
+                        the layers of the DNN and the fMRI data. As hypothesized, we identified gradients in pattern
+                        similarities along the different layers of the auditory, visual, and cross-modal channels of the
+                        DNNs.
                     </p>
                 </div>
             </div>
         </section>
-        
+
         <section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
             <h2 class="text-2xl font-bold text-cyan-600 mb-6">Model-Based Approaches to Pupillometry</h2>
             <p class="text-lg leading-relaxed mb-8">
-                Together with <a href="http://bachlab.org/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Dominik Bach</a>, Christoph has developed model-based procedures for analyzing pupil responses.
+                Together with <a href="http://bachlab.org/" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Dominik Bach</a>, Christoph has developed
+                model-based procedures for analyzing pupil responses.
             </p>
             <div x-data="{ open: false }">
                 <button @click="open = !open" class="text-cyan-600 hover:text-accent-blue underline">Read More</button>
                 <div x-show="open" class="mt-4">
                     <p class="text-lg leading-relaxed mb-4">
-                        In a first step, we established and validated a parsimonious <strong>description of luminance-elicited pupil responses</strong> (on the basis of two response functions). 
-                        This description furnishes a characterization of both prolonged and brief pupil responses 
-                        (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2016_Korn_J_Vis_pupil_model.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn & Bach, 2016</a>). 
-                        In a second step, we validated an <strong>analysis procedure for fear conditioning paradigms</strong> that provides better discrimination than previous methods 
-                        (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2016_Korn_Psychophysiology_pupil_fear.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn, et al., 2016</a>). 
-                        These models have been summarized within a review paper 
-                        (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Bach_Psychophysiology_PsPM_review.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Bach, Castegnetti, Korn, et al., 2018</a>).
+                        In a first step, we established and validated a parsimonious <strong>description of
+                            luminance-elicited pupil responses</strong> (on the basis of two response functions).
+                        This description furnishes a characterization of both prolonged and brief pupil responses
+                        (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2016_Korn_J_Vis_pupil_model.pdf"
+                            target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn &
+                            Bach, 2016</a>).
+                        In a second step, we validated an <strong>analysis procedure for fear conditioning
+                            paradigms</strong> that provides better discrimination than previous methods
+                        (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2016_Korn_Psychophysiology_pupil_fear.pdf"
+                            target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn,
+                            et al., 2016</a>).
+                        These models have been summarized within a review paper
+                        (<a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Bach_Psychophysiology_PsPM_review.pdf"
+                            target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Bach,
+                            Castegnetti, Korn, et al., 2018</a>).
                     </p>
                 </div>
             </div>
         </section>
-        
+
         <section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
             <h2 class="text-2xl font-bold text-cyan-600 mb-6">Commitment to Open Science</h2>
             <p class="text-lg leading-relaxed mb-8">
@@ -217,22 +312,31 @@
                 <button @click="open = !open" class="text-cyan-600 hover:text-accent-blue underline">Read More</button>
                 <div x-show="open" class="mt-4">
                     <p class="text-lg leading-relaxed mb-4">
-                        Therefore, we have made data and code of recent projects publicly available 
-                        (<a href="http://www.dnhi-lab.org/publications" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">find links to relevant materials for any project under publications</a>). 
+                        Therefore, we have made data and code of recent projects publicly available
+                        (<a href="http://www.dnhi-lab.org/publications" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">find links to relevant materials for
+                            any project under publications</a>).
                         We preregister most study designs and try to publish most data and code.
                     </p>
                     <p class="text-lg leading-relaxed mb-4">
-                        We are thankful to the Center for Open Science for awarding us their preregistration prize for two previous publications, which we have preregistered 
-                        (<a href="https://osf.io/aqnmq/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Korn, Ries, Schalk et al., 2017</a> and 
-                        <a href="https://osf.io/98j6m/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Oganian, Heekeren, Korn, 2018</a>).
+                        We are thankful to the Center for Open Science for awarding us their preregistration prize for
+                        two previous publications, which we have preregistered
+                        (<a href="https://osf.io/aqnmq/" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">Korn, Ries, Schalk et al., 2017</a>
+                        and
+                        <a href="https://osf.io/98j6m/" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">Oganian, Heekeren, Korn, 2018</a>).
                     </p>
                     <p class="text-lg leading-relaxed mb-4">
-                        Thanks to the efforts by Dominik Bach and many people in his lab, all developed models for analyzing psychophysiological data are incorporated in the MATLAB toolbox 
-                        <a href="http://pspm.sourceforge.net" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PsPM</a> and most datasets are publicly available.
+                        Thanks to the efforts by Dominik Bach and many people in his lab, all developed models for
+                        analyzing psychophysiological data are incorporated in the MATLAB toolbox
+                        <a href="http://pspm.sourceforge.net" target="_blank" rel="noopener"
+                            class="text-cyan-600 hover:text-accent-blue underline">PsPM</a> and most datasets are
+                        publicly available.
                     </p>
                 </div>
             </div>
-        </section>        
+        </section>
     </main>
 
     <footer class="bg-gray-100 border-t border-gray-200 mt-12">
@@ -241,4 +345,5 @@
         </div>
     </footer>
 </body>
+
 </html>

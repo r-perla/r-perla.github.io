@@ -28,9 +28,11 @@
             },
         }
     </script>
-        <style>
-            [x-cloak] { display: none !important; }
-        </style>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body class="bg-light-gray text-gray-800 font-sans">
@@ -53,22 +55,27 @@
                 <img src="img/old_logo.png" alt="Brain Icon" class="h-8 w-8 mr-2">
                 <span class="text-lg font-bold text-cyan-600">DNHI Lab</span>
             </div>
-            
+
             <!-- Mobile menu button -->
             <button @click="isOpen = !isOpen" class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
 
             <!-- Navigation -->
-            <nav :class="{'flex': isOpen, 'hidden': !isOpen}" class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center" x-cloak>
+            <nav :class="{'flex': isOpen, 'hidden': !isOpen}"
+                class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center"
+                x-cloak>
                 <a href="index.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Home</a>
                 <a href="research.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Research</a>
                 <a href="people.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">People</a>
-                <a href="publications.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
+                <a href="publications.html"
+                    class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
                 <a href="teaching.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Teaching</a>
-                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open Positions</a>
+                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open
+                    Positions</a>
                 <a href="contact.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Contact</a>
             </nav>
         </div>
@@ -76,100 +83,329 @@
 
     <main class="container mx-auto px-4 pt-24 pb-12">
         <section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
-            <p class="mb-4">See also <a href="https://scholar.google.de/citations?user=PNnAS5MAAAAJ" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Google Scholar</a>, <a href="https://orcid.org/0000-0002-8228-2624" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">ORCID</a>, and <a href="https://www.researchgate.net/profile/Christoph-Korn" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">ResearchGate</a>. * indicates equal contribution</p>
-        
+            <p class="mb-4">See also <a href="https://scholar.google.de/citations?user=PNnAS5MAAAAJ" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Google Scholar</a>, <a
+                    href="https://orcid.org/0000-0002-8228-2624" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">ORCID</a>, and <a
+                    href="https://www.researchgate.net/profile/Christoph-Korn" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">ResearchGate</a>. * indicates equal
+                contribution</p>
+
             <h2 class="text-2xl font-bold text-cyan-600 mb-6">Recent Publications and Preprints</h2>
-            
-            <p class="mb-4"><strong>Kuper-Smith BJ</strong>, <strong>Korn CW</strong> (2023) Loss avoidance can increase and decrease cooperation. <a href="https://psyarxiv.com/4me3h/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>. Preregistrations: <a href="https://osf.io/dzkqg" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">1</a>, <a href="https://osf.io/z4geq" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">2</a>, <a href="https://osf.io/72fj6" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">3</a>, <a href="https://osf.io/p6xdr" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">4</a>, <a href="https://github.com/dnhi-lab/losses_gains_2x2" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Data &amp; Code</a>.</p>
-            
-            <p class="mb-4"><strong>Frolichs KMM</strong>, Rosenblau G, <strong>Korn CW</strong> (2022) Incorporating social knowledge structures into computational models. <span class="italic">Nature Communications</span>. <a href="https://www.nature.com/articles/s41467-022-33418-2" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a href="https://osf.io/8r6gv" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Preregistration</a>, <a href="https://github.com/dnhi-lab/PerLe" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Data &amp; Code</a>.</p>
-        
-            <p class="mb-4"><strong>Kuper-Smith BJ</strong>, Voulgaris A, Briken P, Fuss J, &amp; <strong>Korn CW</strong> (2022) Social preferences and psychopathy in a sample of male prisoners. <a href="https://psyarxiv.com/f8myc/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a href="https://github.com/dnhi-lab/social_prison" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Data &amp; Code</a>.</p>
-        
-            <p class="mb-4">Flechsenhar A, Kanske P, Krach S, <strong>Korn CW</strong>, Bertsch K (2022) The (un)Learning of social functions and its significance for mental health. <a href="https://psyarxiv.com/bze7g" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4"><strong>Kuper-Smith BJ</strong>, <strong>Doppelhofer L</strong>, Oganian Y, Rosenblau G, <strong>Korn CW</strong> (2021) Risk perception and optimism bias during the early stages of the COVID-19 pandemic. <span class="underline">Royal Society Open Science</span>. <a href="https://royalsocietypublishing.org/doi/10.1098/rsos.210904" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>, <a href="https://osf.io/89ndm" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Preregistration 1</a>, <a href="https://osf.io/ukz8n" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Preregistration 2</a>, <a href="https://github.com/dnhi-lab/COVID-risk" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Data &amp; Code</a>.</p>
-        
-            <p class="mb-4"><strong>Kuper-Smith BJ</strong>, <strong>Korn CW</strong> (2021) A primer on measuring social preferences with linearly additive decomposed 2x2 games. <a href="https://psyarxiv.com/5jxrf/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4"><strong>Doppelhofer LM</strong>, Hurlemann R, Bach DR, <strong>Korn CW</strong> (2021) Social motives in a patient with bilateral selective amygdala lesions: Shift in prosocial motivation but not in social value orientation. <span class="italic">Neuropsychologia</span>. <a href="https://www.sciencedirect.com/science/article/pii/S0028393221002694" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Wolf RC (2021) Negative valence systems in the system of research domain criteria: Empirical results and new developments. <span class="italic">Nervenarzt</span>. <a href="https://link.springer.com/article/10.1007%2Fs00115-021-01166-1" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4">Esser R, <strong>Korn CW</strong>, Ganzer F, Haaker J (2021) L-DOPA modulates activity in the vmPFC, nucleus accumbens and VTA during threat extinction learning in humans. <span class="italic">eLife</span>. <a href="https://elifesciences.org/articles/65280" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Kerzel M, Redžepović S, Barros P, Heinrich S, Wermter S, Gläscher J (2021) Cross-modal emotion recognition: How similar are patterns between DNNs and human fMRI data? Proceedings of the ICLR2021 Workshop on How Can Findings About The Brain Improve AI Systems? (Brain2AI@ICLR2021). <a href="http://www.dnhi-lab.org/wp-content/uploads/2021/08/Korn_2021_Brain2AI_ICLR_Cross-modal_emotion_DNNs_fMRI.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <h2 class="text-2xl font-bold text-cyan-600 mt-12 mb-6"><span style="color: #000080;">Key Publications</span></h2>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Bach DR (2019) <span style="color: #008000;">Minimizing threat via heuristic and optimal policies recruits hippocampus and medial prefrontal cortex.</span> <span class="underline">Nat Hum Behav</span> 3:733-745. <a href="https://rdcu.be/bDo8W" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-019-0603-9/MediaObjects/41562_2019_603_MOESM1_ESM.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>, <a href="https://www.nature.com/articles/s41562-019-0621-7" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">News &amp; Views</a>, <a href="https://github.com/dnhi-lab/minimizing_threat" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Behavioral data &amp; code</a>, <a href="https://neurovault.org/collections/5046/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">fMRI data</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Bach DR (2018) <span style="color: #008000;">Heuristic and optimal policy computations in the human brain during sequential decision-making.</span> <span class="underline">Nat Commun</span> 9:1:325. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Korn_Nat_Comm_heuristic_optimal_policies_article.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Korn_Nat_Comm_heuristic_optimal_policies_SOM.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>, <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Korn_Nat_Comm_heuristic_optimal_policies_reviews.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Review comments</a>, <a href="https://figshare.com/articles/Behavioral_data_heuristic_optimal_policy_computation_mat/5684371" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Behavioral data</a>, <a href="https://neurovault.org/collections/3242/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">fMRI data</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, La Rosée L, Heekeren HR, Roepke S (2016) <span style="color: #008000;">Social feedback processing in borderline personality disorder.</span> <span class="underline">Psychol Med</span> 46:3:575-578. <a href="https://www.cambridge.org/core/journals/psychological-medicine/article/social-feedback-processing-in-borderline-personality-disorder/66ACFEEE462DD22086E24BE38E3E67B6" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Staib M, Tzovara A, Castegnetti G, Bach DR (2016) <span style="color: #008000;">A pupil size response model to assess fear learning.</span> <span class="underline">Psychophysiology</span> 54:3:330-343. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2016_Korn_Psychophysiology_pupil_fear.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, Data: <a href="https://zenodo.org/record/1443332#.XEICPa3MyRt" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">1</a>, <a href="https://zenodo.org/record/1168494#.XEICRK3MyRt" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">2</a>, <a href="https://zenodo.org/record/1211610#.XEICTq3MyRt" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">3</a>, <a href="https://zenodo.org/record/1288494#.XEICVK3MyRt" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">4</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Bach DR (2015) <span style="color: #008000;">Maintaining homeostasis by decision-making.</span> <span class="underline">PLoS Comput Biol</span> 11:5:e1004301. <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004301" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2015_Korn_Plos_CB_Bach_homeostasis_all_SOM.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW*</strong>, Sharot T*, Walter H, Heekeren HR, Dolan RJ (2014) <span style="color: #008000;">Depression is related to an absence of optimistically biased belief updating about future life events.</span> <span class="underline">Psychol Med</span> 44:579-592. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2014_Korn_Sharot_Psych_Med_depression_optimism.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Prehn K, Park SQ, Walter H, Heekeren HR (2012) <span style="color: #008000;">Positively biased processing of self-relevant social feedback.</span> <span class="underline">J Neurosci</span> 32:16832-16844. <a href="http://www.jneurosci.org/content/32/47/16832.short" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4">Sharot T*, <strong>Korn CW*</strong>, Dolan RJ (2011) <span style="color: #008000;">How unrealistic optimism is maintained in the face of reality.</span> <span class="underline">Nat Neurosci</span> 14:1475-1479. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2011_Sharot_Korn_NN_optimism.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2011_Sharot_Korn_NN_optimism_SOM.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>.</p>
-        
+
+            <p class="mb-4"><strong>Kuper-Smith BJ</strong>, <strong>Korn CW</strong> (2023) Loss avoidance can increase
+                and decrease cooperation. <a href="https://psyarxiv.com/4me3h/" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">PDF</a>. Preregistrations: <a
+                    href="https://osf.io/dzkqg" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">1</a>, <a href="https://osf.io/z4geq"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">2</a>, <a
+                    href="https://osf.io/72fj6" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">3</a>, <a href="https://osf.io/p6xdr"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">4</a>, <a
+                    href="https://github.com/dnhi-lab/losses_gains_2x2" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Data &amp; Code</a>.</p>
+
+            <p class="mb-4"><strong>Frolichs KMM</strong>, Rosenblau G, <strong>Korn CW</strong> (2022) Incorporating
+                social knowledge structures into computational models. <span class="italic">Nature
+                    Communications</span>. <a href="https://www.nature.com/articles/s41467-022-33418-2" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a
+                    href="https://osf.io/8r6gv" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Preregistration</a>, <a
+                    href="https://github.com/dnhi-lab/PerLe" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Data &amp; Code</a>.</p>
+
+            <p class="mb-4"><strong>Kuper-Smith BJ</strong>, Voulgaris A, Briken P, Fuss J, &amp; <strong>Korn
+                    CW</strong> (2022) Social preferences and psychopathy in a sample of male prisoners. <a
+                    href="https://psyarxiv.com/f8myc/" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a
+                    href="https://github.com/dnhi-lab/social_prison" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Data &amp; Code</a>.</p>
+
+            <p class="mb-4">Flechsenhar A, Kanske P, Krach S, <strong>Korn CW</strong>, Bertsch K (2022) The
+                (un)Learning of social functions and its significance for mental health. <a
+                    href="https://psyarxiv.com/bze7g" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4"><strong>Kuper-Smith BJ</strong>, <strong>Doppelhofer L</strong>, Oganian Y, Rosenblau G,
+                <strong>Korn CW</strong> (2021) Risk perception and optimism bias during the early stages of the
+                COVID-19 pandemic. <span class="underline">Royal Society Open Science</span>. <a
+                    href="https://royalsocietypublishing.org/doi/10.1098/rsos.210904" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Link</a>, <a href="https://osf.io/89ndm"
+                    target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Preregistration 1</a>, <a
+                    href="https://osf.io/ukz8n" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Preregistration 2</a>, <a
+                    href="https://github.com/dnhi-lab/COVID-risk" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Data &amp; Code</a>.</p>
+
+            <p class="mb-4"><strong>Kuper-Smith BJ</strong>, <strong>Korn CW</strong> (2021) A primer on measuring
+                social preferences with linearly additive decomposed 2x2 games. <a href="https://psyarxiv.com/5jxrf/"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4"><strong>Doppelhofer LM</strong>, Hurlemann R, Bach DR, <strong>Korn CW</strong> (2021)
+                Social motives in a patient with bilateral selective amygdala lesions: Shift in prosocial motivation but
+                not in social value orientation. <span class="italic">Neuropsychologia</span>. <a
+                    href="https://www.sciencedirect.com/science/article/pii/S0028393221002694" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Wolf RC (2021) Negative valence systems in the system of research
+                domain criteria: Empirical results and new developments. <span class="italic">Nervenarzt</span>. <a
+                    href="https://link.springer.com/article/10.1007%2Fs00115-021-01166-1" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4">Esser R, <strong>Korn CW</strong>, Ganzer F, Haaker J (2021) L-DOPA modulates activity in
+                the vmPFC, nucleus accumbens and VTA during threat extinction learning in humans. <span
+                    class="italic">eLife</span>. <a href="https://elifesciences.org/articles/65280" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Kerzel M, Redžepović S, Barros P, Heinrich S, Wermter S, Gläscher
+                J (2021) Cross-modal emotion recognition: How similar are patterns between DNNs and human fMRI data?
+                Proceedings of the ICLR2021 Workshop on How Can Findings About The Brain Improve AI Systems?
+                (Brain2AI@ICLR2021). <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2021/08/Korn_2021_Brain2AI_ICLR_Cross-modal_emotion_DNNs_fMRI.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <h2 class="text-2xl font-bold text-cyan-600 mt-12 mb-6"><span style="color: #000080;">Key
+                    Publications</span></h2>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Bach DR (2019) <span style="color: #008000;">Minimizing threat via
+                    heuristic and optimal policies recruits hippocampus and medial prefrontal cortex.</span> <span
+                    class="underline">Nat Hum Behav</span> 3:733-745. <a href="https://rdcu.be/bDo8W" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a
+                    href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-019-0603-9/MediaObjects/41562_2019_603_MOESM1_ESM.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>, <a
+                    href="https://www.nature.com/articles/s41562-019-0621-7" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">News &amp; Views</a>, <a
+                    href="https://github.com/dnhi-lab/minimizing_threat" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Behavioral data &amp; code</a>, <a
+                    href="https://neurovault.org/collections/5046/" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">fMRI data</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Bach DR (2018) <span style="color: #008000;">Heuristic and optimal
+                    policy computations in the human brain during sequential decision-making.</span> <span
+                    class="underline">Nat Commun</span> 9:1:325. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Korn_Nat_Comm_heuristic_optimal_policies_article.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Korn_Nat_Comm_heuristic_optimal_policies_SOM.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>, <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Korn_Nat_Comm_heuristic_optimal_policies_reviews.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Review
+                    comments</a>, <a
+                    href="https://figshare.com/articles/Behavioral_data_heuristic_optimal_policy_computation_mat/5684371"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Behavioral
+                    data</a>, <a href="https://neurovault.org/collections/3242/" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">fMRI data</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, La Rosée L, Heekeren HR, Roepke S (2016) <span
+                    style="color: #008000;">Social feedback processing in borderline personality disorder.</span> <span
+                    class="underline">Psychol Med</span> 46:3:575-578. <a
+                    href="https://www.cambridge.org/core/journals/psychological-medicine/article/social-feedback-processing-in-borderline-personality-disorder/66ACFEEE462DD22086E24BE38E3E67B6"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Staib M, Tzovara A, Castegnetti G, Bach DR (2016) <span
+                    style="color: #008000;">A pupil size response model to assess fear learning.</span> <span
+                    class="underline">Psychophysiology</span> 54:3:330-343. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2016_Korn_Psychophysiology_pupil_fear.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, Data:
+                <a href="https://zenodo.org/record/1443332#.XEICPa3MyRt" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">1</a>, <a
+                    href="https://zenodo.org/record/1168494#.XEICRK3MyRt" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">2</a>, <a
+                    href="https://zenodo.org/record/1211610#.XEICTq3MyRt" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">3</a>, <a
+                    href="https://zenodo.org/record/1288494#.XEICVK3MyRt" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">4</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Bach DR (2015) <span style="color: #008000;">Maintaining
+                    homeostasis by decision-making.</span> <span class="underline">PLoS Comput Biol</span>
+                11:5:e1004301. <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004301"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2015_Korn_Plos_CB_Bach_homeostasis_all_SOM.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW*</strong>, Sharot T*, Walter H, Heekeren HR, Dolan RJ (2014) <span
+                    style="color: #008000;">Depression is related to an absence of optimistically biased belief updating
+                    about future life events.</span> <span class="underline">Psychol Med</span> 44:579-592. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2014_Korn_Sharot_Psych_Med_depression_optimism.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Prehn K, Park SQ, Walter H, Heekeren HR (2012) <span
+                    style="color: #008000;">Positively biased processing of self-relevant social feedback.</span> <span
+                    class="underline">J Neurosci</span> 32:16832-16844. <a
+                    href="http://www.jneurosci.org/content/32/47/16832.short" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4">Sharot T*, <strong>Korn CW*</strong>, Dolan RJ (2011) <span style="color: #008000;">How
+                    unrealistic optimism is maintained in the face of reality.</span> <span class="underline">Nat
+                    Neurosci</span> 14:1475-1479. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2011_Sharot_Korn_NN_optimism.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2011_Sharot_Korn_NN_optimism_SOM.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>.</p>
+
             <h2 class="text-2xl font-bold text-cyan-600 mt-12 mb-6">Reviews</h2>
-        
-            <p class="mb-4">Rosenblau G, <strong>Frolichs KMM</strong>, <strong>Korn CW</strong> (2023) A neuro-computational social learning framework to facilitate transdiagnostic classification and treatment across psychiatric disorders.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Rosenblau G (2020) <span style="color: #008000;">How Do Teens and Adults Learn About Other People?</span> <span class="underline">Frontiers for Young Minds</span>. <a href="https://kids.frontiersin.org/articles/10.3389/frym.2020.563084" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4">Bach DR, Castegnetti G, <strong>Korn CW</strong>, Gerster S, Melinscak F, Moser T (2018) <span style="color: #008000;">Psychophysiological modelling - current state and future directions.</span> <span class="underline">Psychophysiology</span> 55:11:e13214. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Bach_Psychophysiology_PsPM_review.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <h2 class="text-2xl font-bold text-cyan-600 mt-12 mb-6"><span style="color: #000080;">Further Publications</span></h2>
-        
-            <p class="mb-4">Rosenblau G, <strong>Korn CW</strong>, Dutton A, Lee D, Pelphrey KA (2020) <span style="color: #008000;">Neurocognitive mechanisms of social inferences in typical and autistic adolescents</span>. <span class="underline">Biol Psychiatry:CCNI</span> 6:8:782-791. <a href="https://www.biologicalpsychiatrycnni.org/article/S2451-9022(20)30176-2/fulltext" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4">Bach DR, <strong>Korn CW</strong>, Vunder J, Bantel A (2018) <span style="color: #008000;">Effect of valproate and pregabalin on human anxiety-like behaviour in a randomised controlled trial.</span> <span class="underline">Transl Psychiatry</span> 8:1:157. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Bach_Trans_Psychiatry_valproate_pregabalin.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4">Tzovara A, <strong>Korn CW</strong>, Bach DR (2018) <span style="color: #008000;">Human Pavlovian fear conditioning conforms to probabilistic learning.</span> <span class="underline">PLoS Comput Biol</span> 14:8:e1006243. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Tzovara_Plos_CB_Korn_Bach_fear_probabilistic_SCR_pupil.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, Data: <a href="https://zenodo.org/record/1295636#.XEHkOa3MyRs" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">1</a>, <a href="https://zenodo.org/record/1292569#.XEHkOq3MyRs" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">2</a>, <a href="https://zenodo.org/record/1168494#.XEHkO63MyRs" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">3</a>, <a href="https://zenodo.org/record/1295638#.XEHkQK3MyRs" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">4</a>.</p>
-        
-            <p class="mb-4">Jeung H, Walther S, <strong>Korn CW</strong>, Bertsch K, Herpertz SC (2018) <span style="color: #008000;">Emotional responses to receiving peer feedback on opinions in borderline personality disorder.</span> <span class="underline">Personal Disord</span> 9:6:595-600. <a href="https://psycnet.apa.org/record/2018-27275-001" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4">Oganian Y, Heekeren HR, <strong>Korn CW</strong> (2018) <span style="color: #008000;">Low foreign language proficiency reduces optimism about the personal future.</span> <span class="underline">Q J Exp Psychol</span> 72:1:60-75. <a href="https://journals.sagepub.com/doi/abs/10.1177/1747021818774789" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>, <a href="https://osf.io/98j6m/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Preregistration</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Heekeren HR, Oganian Y (2018) <span style="color: #008000;">The framing effect in a monetary gambling task is robust in minimally verbal language switching contexts.</span> <span class="underline">Q J Exp Psychol</span> 72:1:52-59. <a href="https://journals.sagepub.com/doi/abs/10.1177/1747021818769259" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4">Rosenblau G, <strong>Korn CW</strong>, Pelphrey KA (2018) <span style="color: #008000;">A computational account of optimizing social predictions reveals that adolescents are conservative learners in social contexts.</span> <span class="underline">J Neurosci</span> 38:4:974-988. <a href="http://www.jneurosci.org/content/38/4/974.abstract" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Vunder J, Miró J, Fuentemilla L, Hurlemann R, Bach DR (2017) <span style="color: #008000;">Amygdala lesions reduce anxiety-like behavior in a human benzodiazepine-sensitive approach-avoidance conflict test.</span> <span class="underline">Biol Psychiatry</span> 82:7:522-531. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2017_Korn_Biol_Psych_lora_lesion.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2017_Korn_Biol_Psych_lora_lesion_final_SOM.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Ries J, Schalk L, Oganian Y, Saalbach H (2017) <span style="color: #008000;">A hard-to-read font reduces the framing effect in a large sample.</span> <span class="underline">Psychonom Bull &amp; Rev</span> 25:2:696-703. <a href="https://link.springer.com/article/10.3758%2Fs13423-017-1395-4" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>, <a href="https://osf.io/aqnmq/" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Preregistration</a>.</p>
-        
-            <p class="mb-4">Rusch T, <strong>Korn CW</strong>, Gläscher J (2017) <span style="color: #008000;">A two-way street between attention and learning.</span> <span class="underline">Neuron</span> 93:2:256-258. <em>Preview on Leong et al. in the same issue.</em> <a href="https://www.sciencedirect.com/science/article/pii/S0896627317300065" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Bach DR (2016) <span style="color: #008000;">A solid frame for the window on cognition: Modelling event-related pupil responses.</span> <span class="underline">J Vis</span> 16:3:28. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2016_Korn_J_Vis_pupil_model.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, La Rosée L, Heekeren HR, Roepke S (2016) <span style="color: #008000;">Processing of information about future life events in borderline personality disorder.</span> <span class="underline">Psychiatry Res</span> 30:246:719-724. <a href="https://www.sciencedirect.com/science/article/pii/S0165178116302542" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW*</strong>, Rosenblau G*, Rodriguez Buritica JM, Heekeren HR (2016) <span style="color: #008000;">Performance feedback is positively biased as predicted by attribution theory.</span> <span class="underline">PLoS One</span> 11:2:e0148581. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0148581" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4">Oganian Y*, <strong>Korn CW*</strong>, Heekeren HR (2016) <span style="color: #008000;">Language switching—but not foreign language use per se—reduces the framing effect.</span> <span class="underline">J Exp Psychol Learn Mem Cogn</span> 42:1:140-148. <a href="https://psycnet.apa.org/record/2015-27292-001" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4">Prehn K*, <strong>Korn CW*</strong>, Bajbouj M, Klann-Delius G, Menninghaus W, Jacobs AM, Heekeren HR (2015) <span style="color: #008000;">The neural correlates of emotion alignment in social interaction.</span> <span class="underline">Soc Cogn Affect Neurosci</span> 10:435-443. <a href="https://academic.oup.com/scan/article/10/3/435/1654297" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4">Garrett N*, Sharot T*, Faulkner P, <strong>Korn CW</strong>, Roiser PR, Dolan RJ (2014) <span style="color: #008000;">Losing the rose tinted glasses: neural substrates of unbiased belief updating in depression.</span> <span class="underline">Frontiers Hum Neurosci</span> 8:639. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2014_Garrett_Frontiers_Sharot_Korn_Dolan_depression_rose_glasses.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4"><strong>Korn CW</strong>, Fan Y, Zhang K, Wang C, Han S, Heekeren HR (2014) <span style="color: #008000;">Cultural influences on social feedback processing of character traits.</span> <span class="underline">Frontiers Hum Neurosci</span> 8:192. <a href="https://www.frontiersin.org/articles/10.3389/fnhum.2014.00192/full" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4">Castro RV*, Brito M*, Guiot E, Polito M, <strong>Korn CW</strong>, Hervé D, Girault J-A, Pauperdin-Tritsch D, Vincent P (2013) <span style="color: #008000;">Striatal neurons have a specific ability to respond to phasic dopamine signals.</span> <span class="underline">J Physiol</span> 591:3197-3124. <a href="https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/jphysiol.2013.252197" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
-        
-            <p class="mb-4">Meshi D, Biele G, <strong>Korn CW</strong>, Heekeren HR (2012) <span style="color: #008000;">How expert advice influences decision making.</span> <span class="underline">PLoS One</span> 7:e49748. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2012_Meshi_Plos_advice.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        
-            <p class="mb-4">Sharot T, Guitart-Masip M, <strong>Korn CW</strong>, Chowdhury R, Dolan RJ (2012) <span style="color: #008000;">How dopamine enhances an optimism bias in humans.</span> <span class="underline">Curr Biol</span> 22:1477-1481. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2012_Sharot_Curr_Biol_optimism_DA.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2012_Sharot_Curr_Biol_optimism_DA_SOM.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>.</p>
-        
-            <p class="mb-4">Sharot T, Kanai R, Marston C, <strong>Korn CW</strong>, Rees G, Dolan RJ (2012) <span style="color: #008000;">Selectively altering belief formation in the human brain.</span> <span class="underline">Proc Natl Acad Sci USA</span> 109:17058-17062. <a href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2012_Sharot_PNAS_optimism_TMS.pdf" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
-        </section>        
+
+            <p class="mb-4">Rosenblau G, <strong>Frolichs KMM</strong>, <strong>Korn CW</strong> (2023) A
+                neuro-computational social learning framework to facilitate transdiagnostic classification and treatment
+                across psychiatric disorders.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Rosenblau G (2020) <span style="color: #008000;">How Do Teens and
+                    Adults Learn About Other People?</span> <span class="underline">Frontiers for Young Minds</span>. <a
+                    href="https://kids.frontiersin.org/articles/10.3389/frym.2020.563084" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4">Bach DR, Castegnetti G, <strong>Korn CW</strong>, Gerster S, Melinscak F, Moser T (2018)
+                <span style="color: #008000;">Psychophysiological modelling - current state and future
+                    directions.</span> <span class="underline">Psychophysiology</span> 55:11:e13214. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Bach_Psychophysiology_PsPM_review.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <h2 class="text-2xl font-bold text-cyan-600 mt-12 mb-6"><span style="color: #000080;">Further
+                    Publications</span></h2>
+
+            <p class="mb-4">Rosenblau G, <strong>Korn CW</strong>, Dutton A, Lee D, Pelphrey KA (2020) <span
+                    style="color: #008000;">Neurocognitive mechanisms of social inferences in typical and autistic
+                    adolescents</span>. <span class="underline">Biol Psychiatry:CCNI</span> 6:8:782-791. <a
+                    href="https://www.biologicalpsychiatrycnni.org/article/S2451-9022(20)30176-2/fulltext"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4">Bach DR, <strong>Korn CW</strong>, Vunder J, Bantel A (2018) <span
+                    style="color: #008000;">Effect of valproate and pregabalin on human anxiety-like behaviour in a
+                    randomised controlled trial.</span> <span class="underline">Transl Psychiatry</span> 8:1:157. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Bach_Trans_Psychiatry_valproate_pregabalin.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4">Tzovara A, <strong>Korn CW</strong>, Bach DR (2018) <span style="color: #008000;">Human
+                    Pavlovian fear conditioning conforms to probabilistic learning.</span> <span class="underline">PLoS
+                    Comput Biol</span> 14:8:e1006243. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2018_Tzovara_Plos_CB_Korn_Bach_fear_probabilistic_SCR_pupil.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, Data:
+                <a href="https://zenodo.org/record/1295636#.XEHkOa3MyRs" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">1</a>, <a
+                    href="https://zenodo.org/record/1292569#.XEHkOq3MyRs" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">2</a>, <a
+                    href="https://zenodo.org/record/1168494#.XEHkO63MyRs" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">3</a>, <a
+                    href="https://zenodo.org/record/1295638#.XEHkQK3MyRs" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">4</a>.</p>
+
+            <p class="mb-4">Jeung H, Walther S, <strong>Korn CW</strong>, Bertsch K, Herpertz SC (2018) <span
+                    style="color: #008000;">Emotional responses to receiving peer feedback on opinions in borderline
+                    personality disorder.</span> <span class="underline">Personal Disord</span> 9:6:595-600. <a
+                    href="https://psycnet.apa.org/record/2018-27275-001" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4">Oganian Y, Heekeren HR, <strong>Korn CW</strong> (2018) <span style="color: #008000;">Low
+                    foreign language proficiency reduces optimism about the personal future.</span> <span
+                    class="underline">Q J Exp Psychol</span> 72:1:60-75. <a
+                    href="https://journals.sagepub.com/doi/abs/10.1177/1747021818774789" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Link</a>, <a href="https://osf.io/98j6m/"
+                    target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Preregistration</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Heekeren HR, Oganian Y (2018) <span style="color: #008000;">The
+                    framing effect in a monetary gambling task is robust in minimally verbal language switching
+                    contexts.</span> <span class="underline">Q J Exp Psychol</span> 72:1:52-59. <a
+                    href="https://journals.sagepub.com/doi/abs/10.1177/1747021818769259" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4">Rosenblau G, <strong>Korn CW</strong>, Pelphrey KA (2018) <span style="color: #008000;">A
+                    computational account of optimizing social predictions reveals that adolescents are conservative
+                    learners in social contexts.</span> <span class="underline">J Neurosci</span> 38:4:974-988. <a
+                    href="http://www.jneurosci.org/content/38/4/974.abstract" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Vunder J, Miró J, Fuentemilla L, Hurlemann R, Bach DR (2017) <span
+                    style="color: #008000;">Amygdala lesions reduce anxiety-like behavior in a human
+                    benzodiazepine-sensitive approach-avoidance conflict test.</span> <span class="underline">Biol
+                    Psychiatry</span> 82:7:522-531. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2017_Korn_Biol_Psych_lora_lesion.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2017_Korn_Biol_Psych_lora_lesion_final_SOM.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Ries J, Schalk L, Oganian Y, Saalbach H (2017) <span
+                    style="color: #008000;">A hard-to-read font reduces the framing effect in a large sample.</span>
+                <span class="underline">Psychonom Bull &amp; Rev</span> 25:2:696-703. <a
+                    href="https://link.springer.com/article/10.3758%2Fs13423-017-1395-4" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Link</a>, <a href="https://osf.io/aqnmq/"
+                    target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Preregistration</a>.</p>
+
+            <p class="mb-4">Rusch T, <strong>Korn CW</strong>, Gläscher J (2017) <span style="color: #008000;">A two-way
+                    street between attention and learning.</span> <span class="underline">Neuron</span> 93:2:256-258.
+                <em>Preview on Leong et al. in the same issue.</em> <a
+                    href="https://www.sciencedirect.com/science/article/pii/S0896627317300065" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Bach DR (2016) <span style="color: #008000;">A solid frame for the
+                    window on cognition: Modelling event-related pupil responses.</span> <span class="underline">J
+                    Vis</span> 16:3:28. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2016_Korn_J_Vis_pupil_model.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, La Rosée L, Heekeren HR, Roepke S (2016) <span
+                    style="color: #008000;">Processing of information about future life events in borderline personality
+                    disorder.</span> <span class="underline">Psychiatry Res</span> 30:246:719-724. <a
+                    href="https://www.sciencedirect.com/science/article/pii/S0165178116302542" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW*</strong>, Rosenblau G*, Rodriguez Buritica JM, Heekeren HR (2016) <span
+                    style="color: #008000;">Performance feedback is positively biased as predicted by attribution
+                    theory.</span> <span class="underline">PLoS One</span> 11:2:e0148581. <a
+                    href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0148581" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4">Oganian Y*, <strong>Korn CW*</strong>, Heekeren HR (2016) <span
+                    style="color: #008000;">Language switching—but not foreign language use per se—reduces the framing
+                    effect.</span> <span class="underline">J Exp Psychol Learn Mem Cogn</span> 42:1:140-148. <a
+                    href="https://psycnet.apa.org/record/2015-27292-001" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4">Prehn K*, <strong>Korn CW*</strong>, Bajbouj M, Klann-Delius G, Menninghaus W, Jacobs AM,
+                Heekeren HR (2015) <span style="color: #008000;">The neural correlates of emotion alignment in social
+                    interaction.</span> <span class="underline">Soc Cogn Affect Neurosci</span> 10:435-443. <a
+                    href="https://academic.oup.com/scan/article/10/3/435/1654297" target="_blank" rel="noopener"
+                    class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4">Garrett N*, Sharot T*, Faulkner P, <strong>Korn CW</strong>, Roiser PR, Dolan RJ (2014)
+                <span style="color: #008000;">Losing the rose tinted glasses: neural substrates of unbiased belief
+                    updating in depression.</span> <span class="underline">Frontiers Hum Neurosci</span> 8:639. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2014_Garrett_Frontiers_Sharot_Korn_Dolan_depression_rose_glasses.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4"><strong>Korn CW</strong>, Fan Y, Zhang K, Wang C, Han S, Heekeren HR (2014) <span
+                    style="color: #008000;">Cultural influences on social feedback processing of character
+                    traits.</span> <span class="underline">Frontiers Hum Neurosci</span> 8:192. <a
+                    href="https://www.frontiersin.org/articles/10.3389/fnhum.2014.00192/full" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4">Castro RV*, Brito M*, Guiot E, Polito M, <strong>Korn CW</strong>, Hervé D, Girault J-A,
+                Pauperdin-Tritsch D, Vincent P (2013) <span style="color: #008000;">Striatal neurons have a specific
+                    ability to respond to phasic dopamine signals.</span> <span class="underline">J Physiol</span>
+                591:3197-3124. <a href="https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/jphysiol.2013.252197"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">Link</a>.</p>
+
+            <p class="mb-4">Meshi D, Biele G, <strong>Korn CW</strong>, Heekeren HR (2012) <span
+                    style="color: #008000;">How expert advice influences decision making.</span> <span
+                    class="underline">PLoS One</span> 7:e49748. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2012_Meshi_Plos_advice.pdf" target="_blank"
+                    rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+
+            <p class="mb-4">Sharot T, Guitart-Masip M, <strong>Korn CW</strong>, Chowdhury R, Dolan RJ (2012) <span
+                    style="color: #008000;">How dopamine enhances an optimism bias in humans.</span> <span
+                    class="underline">Curr Biol</span> 22:1477-1481. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2012_Sharot_Curr_Biol_optimism_DA.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>, <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2012_Sharot_Curr_Biol_optimism_DA_SOM.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">SOM</a>.</p>
+
+            <p class="mb-4">Sharot T, Kanai R, Marston C, <strong>Korn CW</strong>, Rees G, Dolan RJ (2012) <span
+                    style="color: #008000;">Selectively altering belief formation in the human brain.</span> <span
+                    class="underline">Proc Natl Acad Sci USA</span> 109:17058-17062. <a
+                    href="http://www.dnhi-lab.org/wp-content/uploads/2019/01/2012_Sharot_PNAS_optimism_TMS.pdf"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">PDF</a>.</p>
+        </section>
     </main>
 
     <footer class="bg-gray-100 border-t border-gray-200 mt-12">

@@ -28,9 +28,11 @@
             },
         }
     </script>
-        <style>
-            [x-cloak] { display: none !important; }
-        </style>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body class="bg-light-gray text-gray-800 font-sans">
@@ -53,22 +55,27 @@
                 <img src="img/old_logo.png" alt="Brain Icon" class="h-8 w-8 mr-2">
                 <span class="text-lg font-bold text-cyan-600">DNHI Lab</span>
             </div>
-            
+
             <!-- Mobile menu button -->
             <button @click="isOpen = !isOpen" class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
 
             <!-- Navigation -->
-            <nav :class="{'flex': isOpen, 'hidden': !isOpen}" class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center" x-cloak>
+            <nav :class="{'flex': isOpen, 'hidden': !isOpen}"
+                class="flex-col absolute top-full left-0 w-full bg-white md:static md:w-auto md:flex md:flex-row md:space-x-6 md:items-center"
+                x-cloak>
                 <a href="index.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Home</a>
                 <a href="research.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Research</a>
                 <a href="people.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">People</a>
-                <a href="publications.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
+                <a href="publications.html"
+                    class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Publications</a>
                 <a href="teaching.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Teaching</a>
-                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open Positions</a>
+                <a href="open_positions.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Open
+                    Positions</a>
                 <a href="contact.html" class="block py-2 px-4 text-cyan-600 hover:text-cyan-800 md:p-0">Contact</a>
             </nav>
         </div>
@@ -77,33 +84,54 @@
     <main class="container mx-auto px-4 pt-24 pb-12">
         <section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
             <p class="text-lg font-bold text-cyan-600 mb-6">Courses Organized by the Lab</p>
-        
+
             <h2 class="text-2xl font-bold text-cyan-600 mb-6">Current</h2>
-        
-            <h3 class="text-xl font-semibold text-gray-800 mb-4">Kurs: Psychosoziale Modelle im Feld der „Computational Psychiatrie“ 04.-13.05.2023</h3>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Kurs: Psychosoziale Modelle im Feld der „Computational
+                Psychiatrie“ 04.-13.05.2023</h3>
             <p class="text-lg leading-relaxed mb-8">
-                Das neuartige Feld der sogenannten „Computational Psychiatrie“ hat zum Ziel, die Diagnostik und Behandlung von psychischen Erkrankungen mithilfe von computationalen Modellen zu verbessern. Dazu werden zugeschnittene Analysemethoden aus dem Bereich der künstlichen Intelligenz unter Verwendung von „Big Data“ verwendet. Ein besonderer Schwerpunkt liegt dabei auf dem besseren Verständnis psychosozialer Herausforderungen. In diesem Seminar erhalten Sie einen Überblick über diese verschiedenen Ansätze sowie deren Möglichkeiten und Herausforderungen: Wie können computationale Modelle soziale Dysfunktionen abbilden? Wie funktionieren sie? Wie können sie zu einer besseren Diagnostik und Behandlung beitragen? Sie lernen ganz konkret anhand von ausgewählten Beispielen, wie einfache Modelle (in Python) programmiert werden können. Diese Beispiele sind ohne Vorkenntnisse verständlich. Der Kurs findet als Blockseminar an zwei Donnerstagsterminen (15:15-18:30) und zwei Samstagsterminen (9:00-18:00) statt.
+                Das neuartige Feld der sogenannten „Computational Psychiatrie“ hat zum Ziel, die Diagnostik und
+                Behandlung von psychischen Erkrankungen mithilfe von computationalen Modellen zu verbessern. Dazu werden
+                zugeschnittene Analysemethoden aus dem Bereich der künstlichen Intelligenz unter Verwendung von „Big
+                Data“ verwendet. Ein besonderer Schwerpunkt liegt dabei auf dem besseren Verständnis psychosozialer
+                Herausforderungen. In diesem Seminar erhalten Sie einen Überblick über diese verschiedenen Ansätze sowie
+                deren Möglichkeiten und Herausforderungen: Wie können computationale Modelle soziale Dysfunktionen
+                abbilden? Wie funktionieren sie? Wie können sie zu einer besseren Diagnostik und Behandlung beitragen?
+                Sie lernen ganz konkret anhand von ausgewählten Beispielen, wie einfache Modelle (in Python)
+                programmiert werden können. Diese Beispiele sind ohne Vorkenntnisse verständlich. Der Kurs findet als
+                Blockseminar an zwei Donnerstagsterminen (15:15-18:30) und zwei Samstagsterminen (9:00-18:00) statt.
             </p>
-        
+
             <h2 class="text-2xl font-bold text-cyan-600 mb-6">Previous</h2>
-        
-            <h3 class="text-xl font-semibold text-gray-800 mb-4">Course on Computational Psychiatry: Heidelberg 12.-14.05.2022</h3>
-            <h4 class="text-lg font-semibold text-gray-700 mb-2">Focus Topic: Reinforcement Learning Models on Social Learning</h4>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Course on Computational Psychiatry: Heidelberg
+                12.-14.05.2022</h3>
+            <h4 class="text-lg font-semibold text-gray-700 mb-2">Focus Topic: Reinforcement Learning Models on Social
+                Learning</h4>
             <p class="text-lg leading-relaxed mb-4">
-                This course was organized within the framework of the <a href="https://4euplus.eu/4EU-1.html" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">4EU+ European University Alliance</a>.
+                This course was organized within the framework of the <a href="https://4euplus.eu/4EU-1.html"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">4EU+ European
+                    University Alliance</a>.
             </p>
             <img src="img/partners.png" alt="" class="w-full h-auto rounded-md shadow mb-4">
             <h5 class="text-lg font-semibold text-gray-700 mb-2">Topics</h5>
             <p class="text-lg leading-relaxed mb-4">
-                In this three-day course, we gained insights into the burgeoning field of computational psychiatry, its promises and pitfalls. The course consisted of a mixture of theoretical lectures on recent findings and practical sessions on programming (in Python).
+                In this three-day course, we gained insights into the burgeoning field of computational psychiatry, its
+                promises and pitfalls. The course consisted of a mixture of theoretical lectures on recent findings and
+                practical sessions on programming (in Python).
             </p>
             <p class="text-lg leading-relaxed mb-4">
-                Specifically, we learned the basics of how to use reinforcement models for analyzing behavioral datasets from human participants and how these models can help to understand psychiatric disorders. Furthermore, we gained hands-on experience with programming such models with example datasets that cover experiments on social learning about other persons’ character traits and preferences.
+                Specifically, we learned the basics of how to use reinforcement models for analyzing behavioral datasets
+                from human participants and how these models can help to understand psychiatric disorders. Furthermore,
+                we gained hands-on experience with programming such models with example datasets that cover experiments
+                on social learning about other persons’ character traits and preferences.
             </p>
             <p class="text-lg leading-relaxed">
-                All course materials (lectures and hands-on exercises) can be found <a href="https://drive.google.com/drive/folders/1WE0BaoRNgrzfUm15ydkvo2kSv2aiLLi1?usp=sharing" target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">here</a>.
+                All course materials (lectures and hands-on exercises) can be found <a
+                    href="https://drive.google.com/drive/folders/1WE0BaoRNgrzfUm15ydkvo2kSv2aiLLi1?usp=sharing"
+                    target="_blank" rel="noopener" class="text-cyan-600 hover:text-accent-blue underline">here</a>.
             </p>
-        </section>        
+        </section>
     </main>
 
     <footer class="bg-gray-100 border-t border-gray-200 mt-12">
