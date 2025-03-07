@@ -49,6 +49,36 @@
         [x-cloak] {
             display: none !important;
         }
+
+        img {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            pointer-events: none;
+            /* More aggressive - prevents clicking */
+        }
+
+        /* If you want to allow clicking but prevent dragging */
+        .team-image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .team-image-container img {
+            pointer-events: none;
+        }
+
+        .team-image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            z-index: 10;
+        }
     </style>
 </head>
 
@@ -105,8 +135,11 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <!-- Team Member 1 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/new_profiles/Korn_Christoph.jpg" alt="Christoph Korn"
-                        class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/new_profiles/Korn_Christoph.jpg" alt="Christoph Korn"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Christoph Korn</h2>
                     <p class="text-gray-600 text-center mb-4">Principal Investigator</p>
                     <p class="text-sm mb-4 text-justify">Since December 2020, I've been an Assistant Professor
@@ -142,8 +175,11 @@
 
                 <!-- Team Member 2 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/new_profiles/Doppelhofer_Lisa.jpg" alt="Lisa Doppelhofer"
-                        class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/new_profiles/Doppelhofer_Lisa.jpg" alt="Lisa Doppelhofer"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Lisa Doppelhofer</h2>
                     <p class="text-gray-600 text-center mb-4">Graduate Student</p>
                     <p class="text-sm mb-4 text-justify">I study social preferences and decision-making, focusing on how
@@ -166,7 +202,11 @@
                 </div>
                 <!-- Team Member 3 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/new_profiles/Zhang_Sihui.jpg" alt="Sihui Zhang" class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/new_profiles/Zhang_Sihui.jpg" alt="Sihui Zhang"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Sihui Zhang (张思慧)</h2>
                     <p class="text-gray-600 text-center mb-4">Graduate Student</p>
                     <p class="text-sm mb-4 text-justify">Before joining the DNHI-lab, I earned an MSc in Psychology at
@@ -183,8 +223,11 @@
                 </div>
                 <!-- Team Member 4 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/new_profiles/Golowin_Sergej.jpg" alt="Sergej Golowin"
-                        class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/new_profiles/Golowin_Sergej.jpg" alt="Sergej Golowin"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Sergej Golowin</h2>
                     <p class="text-gray-600 text-center mb-4">Graduate Student</p>
                     <p class="text-sm mb-4 text-justify">My research is about decision-making with a special focus on
@@ -206,7 +249,11 @@
                 </div>
                 <!-- Team Member 5 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/new_profiles/Hu_Xiong.jpg" alt="Xiong Hu (胡雄)" class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/new_profiles/Hu_Xiong.jpg" alt="Xiong Hu (胡雄)"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Xiong Hu (胡雄)</h2>
                     <p class="text-gray-600 text-center mb-4">Graduate Student</p>
                     <p class="text-sm mb-4 text-justify">Before joining the DNHI lab, I earned my Bachelor's in
@@ -232,8 +279,11 @@
                 </div>
                 <!-- Team Member 6 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/photo_ismail_small.jpg" alt="Dr. Ismail Guennouni"
-                        class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/photo_ismail_small.jpg" alt="Dr. Ismail Guennouni"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Dr. Ismail Guennouni</h2>
                     <p class="text-gray-600 text-center mb-4">AIH Postdoctoral Fellow</p>
                     <p class="text-sm mb-4 text-justify">I am a Postdoctoral fellow at the AI Health Innovation Cluster,
@@ -257,8 +307,11 @@
 
                 <!-- Team Member 7 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/new_profiles/Perla_Raphael.jpg" alt="Raphael Perla"
-                        class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/new_profiles/Perla_Raphael.jpg" alt="Raphael Perla"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Raphael Perla</h2>
                     <p class="text-gray-600 text-center mb-4">Graduate Student</p>
                     <p class="text-sm mb-4 text-justify">In my research, I utilize reinforcement learning and related
@@ -280,8 +333,11 @@
                 </div>
                 <!-- Team Member 8 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/new_profiles/Liu_Jiatong.jpg" alt="Jiatong Liu (刘嘉桐)"
-                        class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/new_profiles/Liu_Jiatong.jpg" alt="Jiatong Liu (刘嘉桐)"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Jiatong Liu (刘嘉桐)</h2>
                     <p class="text-gray-600 text-center mb-4">Graduate Student</p>
                     <p class="text-sm mb-4 text-justify">I am curious about how humans navigate social landscapes under
@@ -303,8 +359,11 @@
                 </div>
                 <!-- Team Member 9 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/new_profiles/Rojas_Chavez_Marian.jpg" alt="Mariana"
-                        class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/new_profiles/Rojas_Chavez_Marian.jpg" alt="Mariana"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Mariana Rojas Chavez</h2>
                     <p class="text-gray-600 text-center mb-4">Graduate Student</p>
                     <p class="text-sm mb-4 text-justify">Before joining the DNHI lab as a PhD student and research
@@ -324,7 +383,11 @@
                 </div>
                 <!-- Team Member 10 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/new_profiles/Burghardt_Moritz.jpg" alt="Moritz" class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/new_profiles/Burghardt_Moritz.jpg" alt="Moritz"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Moritz Burghardt</h2>
                     <p class="text-gray-600 text-center mb-4">Graduate Student</p>
                     <p class="text-sm mb-4 text-justify">My research focuses on the understanding of aggression and
@@ -347,8 +410,11 @@
                 </div>
                 <!-- Team Member 11 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="img/new_profiles/Runza_Eliana.jpg" alt="Eliana Runza"
-                        class="w-48 h-auto mb-4 object-cover">
+                    <div class="team-image-container">
+                        <img src="img/new_profiles/Runza_Eliana.jpg" alt="Eliana Runza"
+                            class="w-48 h-auto mb-4 object-cover">
+                        <div class="team-image-overlay"></div>
+                    </div>
                     <h2 class="text-2xl font-bold text-center mb-2">Eliana Runza</h2>
                     <p class="text-gray-600 text-center mb-4">Secretary</p>
                     <p class="text-sm mb-4 text-justify">All-round talent</p>
