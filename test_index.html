@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cognition & Learning Lab — Human Decision Making</title>
+  <meta name="description" content="A research lab investigating human decision making, learning, and adaptive behavior — combining experiments, computational modeling, and open science." />
+  <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Brand palette — tweak to taste */
+      --brand: #4f46e5;           /* primary */
+      --brand-2: #06b6d4;         /* accent */
+      --ink: #f1f5f9;             /* text */
+      --paper: #0b1020;           /* dark bg */
+      --glass: 16px;              /* blur radius */
+      --radius: 18px;             /* card radius */
+      --maxw: 1200px;
+
+      /* Derived */
+      --ink-2: color-mix(in oklab, var(--ink), black 20%);
+      --shadow: 0 10px 30px rgba(0,0,0,.55), 0 2px 8px rgba(0,0,0,.45);
+    }
+
+    * { box-sizing: border-box }
+    html,body { height:100% }
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 800px at 10% -10%, color-mix(in oklab, var(--brand) 40%, transparent), transparent 70%),
+        radial-gradient(900px 600px at 110% 10%, color-mix(in oklab, var(--brand-2) 35%, transparent), transparent 70%),
+        var(--paper);
+      overflow-x: hidden;
+    }
+
+    /* --- Nav --- */
+    .nav{
+      position: fixed; inset: 18px 18px auto 18px;
+      z-index: 30;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: color-mix(in oklab, var(--paper), transparent 25%);
+      backdrop-filter: blur(var(--glass));
+      box-shadow: var(--shadow);
+      border: 1px solid color-mix(in oklab, var(--ink), transparent 92%);
+    }
+    .brand{
+      display:flex; gap:10px; align-items:center; text-decoration:none; color:inherit;
+      letter-spacing:.2px; font-weight:700;
+    }
+    .brand svg{ width:28px; height:28px }
+    .nav ul{
+      list-style:none; display:flex; gap: 18px; margin:0; padding:0;
+    }
+    .nav a{
+      text-decoration:none; color: var(--ink-2); font-weight:600; font-size:.95rem;
+    }
+    .nav a:hover{ color: var(--ink) }
+    .nav .cta{
+      padding: 10px 14px; border-radius: 999px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color:white !important; box-shadow: 0 6px 16px color-mix(in oklab, var(--brand), black 20%);
+    }
+    .nav .cta:focus-visible{ outline: 2px solid white; outline-offset: 2px }
+
+    /* --- Hero --- */
+    .hero{
+      position: relative;
+      min-height: 100svh;
+      display: grid; place-items: center;
+      padding: 120px 24px 64px;
+      isolation: isolate;
+    }
+    .hero-inner{
+      width: min(100%, var(--maxw));
+      display: grid; grid-template-columns: 1.2fr .8fr; gap: 36px;
+      align-items: center;
+    }
+    @media (max-width: 1000px){
+      .hero-inner{ grid-template-columns: 1fr; gap: 28px }
+    }
+    .tag{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:999px;
+      border:1px dashed color-mix(in oklab, var(--ink), transparent 85%);
+      background: color-mix(in oklab, var(--paper), transparent 20%);
+      backdrop-filter: blur(calc(var(--glass) * .6));
+      font-size:.85rem; color: var(--ink-2); font-weight:600;
+    }
+    .title{
+      margin: 14px 0 10px;
+      font-weight: 800;
+      line-height: .98;
+      letter-spacing: -0.02em;
+      font-size: clamp(2.2rem, 4.2vw + .5rem, 5rem);
+    }
+    .title .gradient{
+      background: linear-gradient(120deg, var(--brand), var(--brand-2));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .lead{
+      margin: 10px 0 26px;
+      font-size: clamp(1.05rem, .5vw + 1rem, 1.25rem);
+      color: var(--ink-2);
+      max-width: 55ch;
+    }
+
+    .actions{ display:flex; flex-wrap: wrap; gap: 12px }
+    .btn{
+      appearance: none; border:0; cursor:pointer;
+      text-decoration:none; font-weight:700;
+      padding: 14px 18px; border-radius: 14px;
+      display:inline-flex; align-items:center; gap:10px;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: white;
+      box-shadow: 0 10px 24px color-mix(in oklab, var(--brand), black 25%);
+    }
+    .btn.secondary{
+      color: var(--ink);
+      background: color-mix(in oklab, var(--paper), transparent 10%);
+      border:1px solid color-mix(in oklab, var(--ink), transparent 88%);
+      backdrop-filter: blur(calc(var(--glass) * .7));
+    }
+    .btn:hover{ transform: translateY(-2px) }
+    .btn:focus-visible{ outline: 2px solid color-mix(in oklab, var(--brand), white 20%); outline-offset: 2px }
+
+    /* --- Metrics card --- */
+    .metrics{
+      display:flex; gap:14px; flex-wrap:wrap; margin-top: 18px;
+    }
+    .chip{
+      padding:10px 12px; border-radius: 12px;
+      background: color-mix(in oklab, var(--paper), transparent 14%);
+      border:1px solid color-mix(in oklab, var(--ink), transparent 90%);
+      font-weight: 700; color: var(--ink-2);
+    }
+
+    /* --- Visual panel --- */
+    .panel{
+      position: relative;
+      border-radius: var(--radius);
+      padding: 24px;
+      background:
+        radial-gradient(600px 300px at 100% 0%, color-mix(in oklab, var(--brand) 25%, transparent), transparent 70%),
+        color-mix(in oklab, var(--paper), transparent 6%);
+      border:1px solid color-mix(in oklab, var(--ink), transparent 88%);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      min-height: 420px;
+    }
+    .panel h3{
+      margin:0 0 12px; font-weight:800; letter-spacing:-.01em;
+      font-size: clamp(1.05rem, .6vw + .9rem, 1.3rem);
+    }
+    .legend{
+      display:flex; gap:10px; align-items:center; color: var(--ink-2); font-size:.9rem;
+    }
+    .legend .swatch{ width:10px; height:10px; border-radius:999px; background: var(--brand) }
+    .legend .swatch2{ background: var(--brand-2) }
+
+    /* Canvas overlay for interactive graph */
+    canvas#graph{
+      position:absolute; inset:0; width:100%; height:100%;
+      display:block;
+      filter: saturate(1.05) contrast(1.02);
+      opacity:.9;
+    }
+
+    /* Floating badges */
+    .float-badges{
+      position:absolute; inset:auto auto 16px 16px; display:flex; gap:10px; z-index:2; flex-wrap:wrap;
+    }
+    .badge{
+      padding:10px 12px; border-radius: 999px;
+      background: rgba(255,255,255,.14);
+      backdrop-filter: blur(calc(var(--glass) * .8));
+      border:1px solid color-mix(in oklab, var(--ink), transparent 85%);
+      color: var(--ink);
+      font-weight:700;
+    }
+
+    /* --- Scroll cue --- */
+    .cue{
+      position:absolute; left:50%; bottom:20px; transform: translateX(-50%);
+      font-size:.9rem; color: var(--ink-2);
+      display:flex; flex-direction:column; align-items:center; gap:6px;
+    }
+    .mouse{
+      width:20px; height:30px; border:2px solid color-mix(in oklab, var(--ink), transparent 70%);
+      border-radius:12px; position:relative;
+    }
+    .mouse::after{
+      content:""; position:absolute; left:50%; top:6px; width:2px; height:6px; background: color-mix(in oklab, var(--ink), transparent 65%); border-radius:2px; transform: translateX(-50%);
+      animation: wheel 1.6s ease-in-out infinite;
+    }
+    @keyframes wheel{
+      0%{ transform: translate(-50%, 0) }
+      70%{ transform: translate(-50%, 8px); opacity:.6 }
+      100%{ transform: translate(-50%, 0); opacity:1 }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .btn, .mouse::after{ animation: none !important; transition: none !important }
+    }
+
+    /* --- Footer stub --- */
+    .foot{
+      display:flex; justify-content:center; padding: 28px 16px 44px; color: var(--ink-2); font-size:.95rem;
+    }
+
+    /* --- Utility --- */
+    .sr-only{
+      position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav" role="navigation" aria-label="Main">
+    <a class="brand" href="#" aria-label="Lab home">
+      <!-- Minimal neural logo -->
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="var(--brand)"/><stop offset="1" stop-color="var(--brand-2)"/>
+        </linearGradient></defs>
+        <circle cx="12" cy="32" r="6" fill="url(#g)"/>
+        <circle cx="52" cy="18" r="6" fill="url(#g)"/>
+        <circle cx="50" cy="46" r="6" fill="url(#g)"/>
+        <circle cx="32" cy="32" r="6" fill="url(#g)"/>
+        <path d="M18 31 L26 32 M38 29 L46 20 M38 35 L46 43" stroke="url(#g)" stroke-width="3" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>Cognition & Learning Lab</span>
+    </a>
+    <ul>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#people">People</a></li>
+      <li><a href="#papers">Publications</a></li>
+      <li><a href="#open">Open Data</a></li>
+      <li><a class="cta" href="#join">Join Us</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero -->
+  <main class="hero" id="top">
+    <div class="hero-inner">
+      <section aria-labelledby="hero-title">
+        <span class="tag" aria-label="Focus areas">Computational Psychiatry · Reinforcement Learning · Decision Neuroscience</span>
+        <h1 class="title" id="hero-title">
+          We study <span class="gradient">how humans learn</span> and <span class="gradient">choose</span> under uncertainty.
+        </h1>
+        <p class="lead">
+          Experiments, modeling, and open science to decode the algorithms of human choice. We build formal models of learning, validate them with behavioral and neural data, and share tools for the community.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#papers" aria-label="Browse our publications">
+            <span>Explore Publications</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 12h12l-5-5l1.41-1.41L21.83 14l-8.42 8.41L12 21l5-5H5z"/></svg>
+          </a>
+          <a class="btn secondary" href="#open" aria-label="Open datasets and code">
+            Our Datasets & Code
+          </a>
+        </div>
+        <div class="metrics" aria-label="Lab metrics">
+          <div class="chip">52+ peer-reviewed papers</div>
+          <div class="chip">8 open datasets</div>
+          <div class="chip">5 active projects</div>
+        </div>
+      </section>
+
+      <aside class="panel" aria-label="Interactive decision graph visual">
+        <h3>Decision Graph · Learning Trajectories</h3>
+        <div class="legend"><span class="swatch"></span> Belief state <span class="swatch swatch2" style="margin-left:12px"></span> Prediction error</div>
+        <canvas id="graph" aria-hidden="true"></canvas>
+        <div class="float-badges">
+          <div class="badge">RL · Bayesian</div>
+          <div class="badge">Bandits</div>
+          <div class="badge">Active Inference</div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="cue" aria-hidden="true">
+      <div class="mouse"></div>
+      <div>Scroll</div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <span>© <span id="year"></span> Cognition & Learning Lab · <a href="#contact" style="color:inherit">Contact</a></span>
+  </footer>
+
+  <script>
+    // Year stamp
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Interactive decision graph canvas (dark-only, gentle attraction to pointer)
+    (function(){
+      const canvas = document.getElementById('graph');
+      const ctx = canvas.getContext('2d');
+      let dpr = Math.min(window.devicePixelRatio || 1, 2);
+      let nodes = [];
+      let mouse = {x: -9999, y: -9999};
+      const maxNodes = 80;               // perf/quality balance
+      const linkDist = 140;              // px at CSS resolution
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // New: gentle attraction params (tweak as needed)
+      const R = 200 * dpr;               // influence radius in device px
+      const MAX_FORCE = 0.05 * dpr;      // max per-frame accel (px/frame)
+
+      function resize(){
+        const rect = canvas.getBoundingClientRect();
+        canvas.width = Math.floor(rect.width * dpr);
+        canvas.height = Math.floor(rect.height * dpr);
+      }
+      new ResizeObserver(resize).observe(canvas);
+      resize();
+
+      function rand(min, max){ return Math.random() * (max - min) + min; }
+
+      function init(){
+        nodes = [];
+        const w = canvas.width, h = canvas.height;
+        for(let i=0;i<maxNodes;i++){
+          nodes.push({
+            x: rand(0, w), y: rand(0, h),
+            vx: rand(-0.2, 0.2), vy: rand(-0.2, 0.2),
+            r: rand(1.4, 2.4) * dpr,
+            hue: rand(210, 280),
+          });
+        }
+      }
+      init();
+
+      canvas.addEventListener('pointermove', e=>{
+        const rect = canvas.getBoundingClientRect();
+        mouse.x = (e.clientX - rect.left) * dpr;
+        mouse.y = (e.clientY - rect.top) * dpr;
+      });
+      canvas.addEventListener('pointerleave', ()=>{ mouse.x = mouse.y = -9999; });
+
+      function step(){
+        const w = canvas.width, h = canvas.height;
+        ctx.clearRect(0,0,w,h);
+
+        // Node motion
+        for(const p of nodes){
+          if(!prefersReduced){
+            // Gentle attraction with quadratic falloff and capped acceleration
+            const dx = mouse.x - p.x, dy = mouse.y - p.y;
+            const d = Math.hypot(dx, dy);
+            if(d < R){
+              const ux = dx / (d || 1), uy = dy / (d || 1);
+              const s = 1 - d / R;             // 0 at boundary, 1 at pointer
+              const f = (s * s) * MAX_FORCE;   // quadratic falloff
+              p.vx += ux * f;
+              p.vy += uy * f;
+            }
+          }
+          // Brownian drift + damping
+          p.vx += (Math.random()-0.5)*0.03;
+          p.vy += (Math.random()-0.5)*0.03;
+          p.vx *= 0.995; p.vy *= 0.995;
+
+          p.x += p.vx; p.y += p.vy;
+
+          // Wrap edges (prevents accumulation offscreen)
+          if(p.x < 0) p.x = w; if(p.x > w) p.x = 0;
+          if(p.y < 0) p.y = h; if(p.y > h) p.y = 0;
+        }
+
+        // Links (belief state connectivity)
+        const linkPx = linkDist * dpr;
+        for(let i=0;i<nodes.length;i++){
+          const a = nodes[i];
+          for(let j=i+1;j<nodes.length;j++){
+            const b = nodes[j];
+            const dx = a.x - b.x, dy = a.y - b.y;
+            const d = Math.hypot(dx, dy);
+            if(d < linkPx){
+              const alpha = 1 - d / linkPx;
+              ctx.strokeStyle = `hsla(${(a.hue+b.hue)/2}, 80%, 60%, ${0.22*alpha})`;
+              ctx.lineWidth = 1 * dpr;
+              ctx.beginPath();
+              ctx.moveTo(a.x, a.y);
+              ctx.lineTo(b.x, b.y);
+              ctx.stroke();
+            }
+          }
+        }
+
+        // Nodes
+        for(const p of nodes){
+          ctx.fillStyle = `hsla(${p.hue}, 80%, 60%, 0.9)`;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+          ctx.fill();
+        }
+
+        if(!prefersReduced) requestAnimationFrame(step);
+      }
+
+      if(prefersReduced){
+        step(); // static frame
+      } else {
+        requestAnimationFrame(step);
+      }
+    })();
+  </script>
+</body>
+</html>
