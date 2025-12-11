@@ -1,0 +1,165 @@
+Brief CV
+
+Since 2020- W1-Tenure Track Professor for Social Neuroscience
+- Department of General Psychiatry, University Hospital Heidelberg
+Since 2024- PI at the German Center for Mental Health (DZPG)
+2018-2025- Principal Investigator Emmy-Noether research group
+- Department of General Psychiatry, University Hospital, Heidelberg
+- Institute for Systems Neuroscience, University Medical Center Hamburg-Eppendorf, UKE
+2016-2018- Postdoc, Institute for Systems Neuroscience, University Medical Center Hamburg-Eppendorf, UKE
+- Member TRR 169: Crossmodal learning: Adaptivity, prediction and interaction (Hamburg & Beijing)
+- Research stays at Harvard University, scholarship: German Academic Exchange service (DAAD)
+2013-2016- Postdoc, Zurich University Hospital for Psychiatry, University of Zurich
+2009-2013- Dr. phil., Psychology
+- Freie Universität Berlin
+- Scholarship: Berlin School of Mind and Brain
+- Self-relevant social feedback processing
+- Supervisors: Prof. Heekeren, Prof. Walter
+2007-2009- Master of Science, Brain and Mind Sciences
+- University College London, Ecole Normale Supérieure Paris & Université Pierre et Marie Curie
+- Scholarship: German Academic Exchange service (DAAD)
+- Supervisors: Prof. Dolan, Dr. Vincent
+2004-2007- Bachelor of Science, Biomedicine
+- University of Würzburg
+- Member Max-Weber-Programme
+- Supervisors: Prof. Gerber, Prof. Heisenberg
+
+
+a) Research overview [Darstellung abgeschlossener, laufender und geplanter Forschung]
+Main research questions and methods
+My overall research questions are:
+1) Which neuro-cognitive mechanisms underlie social learning and decision-making? 
+2) How do humans succeed or fail to achieve cooperation? 
+3) Why do patients with psychiatric disorders (in particular with Borderline Personality Disorder, BPD) have difficulties maintaining mutually supportive social interactions? 
+To address these questions, my published, ongoing, and future studies often use and combine: 
+- computational modeling of behavioral data
+- simulations using reinforcement learning, evolutionary game theory, and deep neural networks
+- model-based and multivariate analyses of functional magnetic resonance imaging (fMRI)
+- pupillometric and virtual reality data
+Members of my group and I develop novel paradigms and apply state-of-the-art modelling techniques. The findings from our current projects highlight important open questions about the neuro-cognitive mechanisms of social learning and decision-making in healthy individuals and in patients with psychiatric disorders. I will submit several focused applications for individual research grants (e.g., through the DFG) to address these questions.
+My research is guided by Marr’s tripartite framework: First, for developing novel paradigms, I clearly specify the goals, problems, and situations that individuals with or without social problems face. Second, I derive computational models to mathematically characterize behavioral strategies. Third, I apply fMRI (and pupillometry) to characterize the neural implementation.
+
+
+b) Publications [Vollständiges Publikationsverzeichnis]
+- In anti-chronological order
+- See also googlescholar and ORCID.
+- Asterisk * indicates equal contribution.
+- If possible, data and code are made online available for recent publications.
+- Almost all recent publications are preregistered (mostly at the Open Science Framework, OSF).
+- Links to data, code, and preregistrations can be found in the articles.
+- Brief descriptions are added for the key publications.
+
+Key reviews (since 2021)
+1. Kuper-Smith, B. J., & Korn, C. W. (2023). Linearly-additive decomposed 2 × 2 games: A primer for research. Collabra: Psychology, 9(1). https://doi.org/10.1525/collabra.84916
+2. Rosenblau, G., Frolichs, K., & Korn, C. W. (2023). A neuro-computational social learning framework to facilitate transdiagnostic classification and treatment across psychiatric disorders. Neurosci Biobehav Rev, 149, 105181. https://doi.org/10.1016/j.neubiorev.2023.105181
+
+Key publications (since 2021)
+3. Doppelhofer, L. M., Perla, R., Frolichs, K. M. M., Rosenblau, G., Herpertz, S. C., & Korn, C. W. (2025). Estimating and learning personality traits of and from women with borderline personality disorder. Borderline Personal Disord Emot Dysregul, in print( ).
+In a preregistered study, we use computational modelling to demonstrate that individuals with BPD exhibit pervasive negativity biases in self- and other-evaluations, yet retain intact social learning capacities.
+4. Doppelhofer, L. M., Loloff, J., Neukel, C., Herpertz, S. C., & Korn, C. W. (2025). Cooperative decision-making in borderline personality disorder: Insights from a preregistered study using a comprehensive economic task battery. Borderline Personal Disord Emot Dysregul, 12(1), 24. https://doi.org/10.1186/s40479-025-00295-2
+In a preregistered study with six experiments, patients with borderline personality disorder unexpectedly showed similar social behavior as healthy controls.
+5. Kuper-Smith, B. J., & Korn, C. W. (2025). Loss avoidance during social interactions. Commun Psychol, 3(1), 114. https://doi.org/10.1038/s44271-025-00288-5
+In a series of seven experiments (4 preregistered; NOffline = 197, NOnline = 1653), we showed that cooperative and defective behavior is consistently driven by avoiding losses altogether (loss avoidance), but not by minimizing losses (loss aversion).
+6. Kube, T., & Korn, C. W. (2025). Induced negative affect hinders self-referential belief updating in response to social feedback. Emotion, 25(1), 174–185. https://doi.org/10.1037/emo0001426
+In a large nonclinical sample (N = 117), we showed that negative affect can hamper the integration of (positive) peer feedback on personality traits.
+7. Kuper-Smith, B. J., Voulgaris, A., Briken, P., Fuss, J., & Korn, C. W. (2024). Social preferences and psychopathy in a sample of male prisoners-a pilot study. Sci Rep, 14(1), 8344. https://doi.org/10.1038/s41598-024-59066-8 
+A sample of 35 male prison inmates, who were arrested for severe violent offenses, completed a series of economic games.
+8. Frolichs, K. M. M., Rosenblau, G., & Korn, C. W. (2022). Incorporating social knowledge structures into computational models. Nat Commun, 13(1), 6205. https://doi.org/10.1038/s41467-022-33418-2
+We developed a set of novel reinforcement learning models that describe the mechanism of how humans learn about other persons’ character traits.
+9. Doppelhofer, L. M., Hurlemann, R., Bach, D. R., & Korn, C. W. (2021). Social motives in a patient with bilateral selective amygdala lesions: Shift in prosocial motivation but not in social value orientation. Neuropsychologia, 162, 108016. https://doi.org/10.1016/j.neuropsychologia.2021.108016
+We used different economic models to characterize individual differences of fairness and related social preferences in a patient with amygdala lesions and large samples of healthy individuals.
+10. Kuper-Smith, B. J., Doppelhofer, L. M., Oganian, Y., Rosenblau, G., & Korn, C. W. (2021). Risk perception and optimism during the early stages of the covid-19 pandemic. R Soc Open Sci, 8(11), 210904. https://doi.org/10.1098/rsos.210904
+This was one of the first studies to longitudinally assess the expectations and the subjective optimism of persons in Germany, the UK, and the US with respect to the COVID-19 pandemic.
+
+Reviews
+11. Liu, S., Behrens, S. C., Besteher, B., Bilek, E., Chae, W. R., Clemens, V., Korn, C. W., Pflug, V., Richter, A., Selle, J., O'Sullivan, J. L., von Brachel, R., Totzeck, C., & Brandhorst, I. (2024). Structures, aims and needs of early career scientists at the german center for mental health. Nervenarzt, 95(5), 467–473. https://doi.org/10.1007/s00115-024-01631-7 (Original work published Strukturen, Ziele und Bedürfnisse der Early Career Scientists am Deutschen Zentrum für Psychische Gesundheit.) 
+12. Flechsenhar, A., Kanske, P., Krach, S., Korn, C. W., & Bertsch, K. (2022). The (un)learning of social functions and its significance for mental health. Clin Psychol Rev, 98, 102204. https://doi.org/10.1016/j.cpr.2022.102204
+13. Korn, C. W., & Wolf, R. C. (2021). Negative valence systems in the system of research domain criteria : Empirical results and new developments. Nervenarzt, 92(9), 868–877. https://doi.org/10.1007/s00115-021-01166-1 (Original work published Negative Valenzsysteme im System der Research Domain Criteria: Empirische Resultate und neue Entwicklungen.) 
+14. Bach, D. R., Castegnetti, G., Korn, C. W., Gerster, S., Melinscak, F., & Moser, T. (2018). Psychophysiological modeling: Current state and future directions. Psychophysiology, 55(11), e13214. https://doi.org/10.1111/psyp.13209 
+15. Rusch, T., Korn, C. W., & Glascher, J. (2017). A two-way street between attention and learning. Neuron, 93(2), 256–258. https://doi.org/10.1016/j.neuron.2017.01.005 
+
+Publications
+16. Schroder, A., Czekalla, N., Mayer, A. V., Zhang, L., Stolz, D. S., Korn, C. W., Diekelmann, S., Luebber, F., Paulus, F. M., Muller-Pinzler, L., & Krach, S. (2025). Initial expectations and confidence affect the formation of novel self-beliefs and their revision. Open Mind (Camb), 9, 1576–1596. https://doi.org/10.1162/OPMI.a.36 
+17. Garcia-Arch, J., Sabio-Albert, M., Korn, C. W., & Fuentemilla, L. (2025). How the self-concept structures social role learning: Insights from computational models. R Soc Open Sci, 12(9), 250590. https://doi.org/10.1098/rsos.250590 
+18. Seitz, K. I., Schouler, N., Hundertmark, J., Wilhelm, M., Franz, S., Bauer, S., Taubner, S., Korn, C. W., Haun, M. W., Ditzen, B., Zimmermann, H., Enning, F., Vonderlin, R., Schmahl, C., Schramm, E., Aguilar-Raab, C., Vonderlin, E., Bailer, J., Bopp, E.,…Herpertz, S. C. (2025). Mechanism-based modular psychotherapy versus cognitive behavioural therapy for adolescents and young adults with childhood trauma experiences: Study protocol for a feasibility trial within the German Center for Mental Health. BMJ Open, 15(4), e090476. https://doi.org/10.1136/bmjopen-2024-090476 
+19. Liu, W., Mark, I., Korn, C. W., & Rosenblau, G. (2025). Social context matters-characterizing adolescent cooperation strategies when perceiving the other as a peer versus computer partner. J Adolesc. https://doi.org/10.1002/jad.70025 
+20. Garcia-Arch, J., Korn, C. W., & Fuentemilla, L. (2025). Self-utility distance as a computational approach to understanding self-concept clarity. Commun Psychol, 3(1), 50. https://doi.org/10.1038/s44271-025-00231-8 
+21. Mueller, M., Korn, C. W., & Haaker, J. (2025). The effect of nicotine on threat avoidance behaviour in healthy non-smokers. Psychopharmacology (Berl), 242(9), 2111–2121. https://doi.org/10.1007/s00213-025-06789-9 
+22. Becker, J., Korn, C. W., & Blank, H. (2024). Pupil diameter as an indicator of sound pair familiarity after statistically structured auditory sequence. Sci Rep, 14(1), 8739. https://doi.org/10.1038/s41598-024-59302-1 
+23. Becker, J., Viertler, M., Korn, C. W., & Blank, H. (2024). The pupil dilation response as an indicator of visual cue uncertainty and auditory outcome surprise. Eur J Neurosci, 59(10), 2686–2701. https://doi.org/10.1111/ejn.16306 
+24. Schnitzler, T., Korn, C. W., S, C. H., & Fuchs, T. (2024). Emotion recognition in autism spectrum condition during the covid-19 pandemic. Autism, 28(7), 1690–1702. https://doi.org/10.1177/13623613231203306 
+25. Abivardi, A., Korn, C. W., Rojkov, I., Gerster, S., Hurlemann, R., & Bach, D. R. (2023). Acceleration of inferred neural responses to oddball targets in an individual with bilateral amygdala lesion compared to healthy controls. Sci Rep, 13(1), 14550. https://doi.org/10.1038/s41598-023-41357-1 
+26. Rosenblau, G., Korn, C. W., Dutton, A., Lee, D., & Pelphrey, K. A. (2021). Neurocognitive mechanisms of social inferences in typical and autistic adolescents. Biol Psychiatry Cogn Neurosci Neuroimaging, 6(8), 782–791. https://doi.org/10.1016/j.bpsc.2020.07.002 
+27. Esser, R., Korn, C. W., Ganzer, F., & Haaker, J. (2021). L-dopa modulates activity in the vmpfc, nucleus accumbens, and vta during threat extinction learning in humans. Elife, 10. https://doi.org/10.7554/eLife.65280 
+28. Korn, C. W., & Bach, D. R. (2019). Minimizing threat via heuristic and optimal policies recruits hippocampus and medial prefrontal cortex. Nat Hum Behav, 3(7), 733–745. https://doi.org/10.1038/s41562-019-0603-9 
+29. Oganian, Y., Heekeren, H. R., & Korn, C. W. (2019). Low foreign language proficiency reduces optimism about the personal future. Q J Exp Psychol (Hove), 72(1), 60–75. https://doi.org/10.1177/1747021818774789 
+30. Korn, C. W., Heekeren, H. R., & Oganian, Y. (2019). The framing effect in a monetary gambling task is robust in minimally verbal language switching contexts. Q J Exp Psychol (Hove), 72(1), 52–59. https://doi.org/10.1177/1747021818769259 
+31. Bach, D. R., Korn, C. W., Vunder, J., & Bantel, A. (2018). Effect of valproate and pregabalin on human anxiety-like behaviour in a randomised controlled trial. Transl Psychiatry, 8(1), 157. https://doi.org/10.1038/s41398-018-0206-7 
+32. Rosenblau, G., Korn, C. W., & Pelphrey, K. A. (2018). A computational account of optimizing social predictions reveals that adolescents are conservative learners in social contexts. J Neurosci, 38(4), 974–988. https://doi.org/10.1523/JNEUROSCI.1044-17.2017 
+33. Tzovara, A., Korn, C. W., & Bach, D. R. (2018). Human pavlovian fear conditioning conforms to probabilistic learning. PLoS Comput Biol, 14(8), e1006243. https://doi.org/10.1371/journal.pcbi.1006243 
+34. Korn, C. W., Ries, J., Schalk, L., Oganian, Y., & Saalbach, H. (2018). A hard-to-read font reduces the framing effect in a large sample. Psychon Bull Rev, 25(2), 696–703. https://doi.org/10.3758/s13423-017-1395-4 
+35. Korn, C. W., & Bach, D. R. (2018). Heuristic and optimal policy computations in the human brain during sequential decision-making. Nat Commun, 9(1), 325. https://doi.org/10.1038/s41467-017-02750-3 
+36. Jeung, H., Walther, S., Korn, C. W., Bertsch, K., & Herpertz, S. C. (2018). Emotional responses to receiving peer feedback on opinions in borderline personality disorder. Personal Disord, 9(6), 595–600. https://doi.org/10.1037/per0000292 
+37. Korn, C. W., Vunder, J., Miro, J., Fuentemilla, L., Hurlemann, R., & Bach, D. R. (2017). Amygdala lesions reduce anxiety-like behavior in a human benzodiazepine-sensitive approach-avoidance conflict test. Biol Psychiatry, 82(7), 522–531. https://doi.org/10.1016/j.biopsych.2017.01.018 
+38. Korn, C. W., Staib, M., Tzovara, A., Castegnetti, G., & Bach, D. R. (2017). A pupil size response model to assess fear learning. Psychophysiology, 54(3), 330–343. https://doi.org/10.1111/psyp.12801 
+39. Oganian*, Y., Korn*, C. W., & Heekeren, H. R. (2016). Language switching-but not foreign language use per se-reduces the framing effect. J Exp Psychol Learn Mem Cogn, 42(1), 140–148. https://doi.org/10.1037/xlm0000161 
+40. Korn, C. W., & Bach, D. R. (2016). A solid frame for the window on cognition: Modeling event-related pupil responses. J Vis, 16(3), 28. https://doi.org/10.1167/16.3.28 
+41. Korn*, C. W., Rosenblau*, G., Rodriguez Buritica, J. M., & Heekeren, H. R. (2016). Performance feedback processing is positively biased as predicted by attribution theory. PLoS One, 11(2), e0148581. https://doi.org/10.1371/journal.pone.0148581 
+42. Korn, C. W., La Rosee, L., Heekeren, H. R., & Roepke, S. (2016a). Social feedback processing in borderline personality disorder. Psychol Med, 46(3), 575–587. https://doi.org/10.1017/S003329171500207X 
+43. Korn, C. W., La Rosee, L., Heekeren, H. R., & Roepke, S. (2016b). Processing of information about future life events in borderline personality disorder. Psychiatry Res, 246, 719–724. https://doi.org/10.1016/j.psychres.2016.07.067 
+44. Korn, C. W., & Bach, D. R. (2015). Maintaining homeostasis by decision-making. PLoS Comput Biol, 11(5), e1004301. https://doi.org/10.1371/journal.pcbi.1004301 
+45. Prehn*, K., Korn*, C. W., Bajbouj, M., Klann-Delius, G., Menninghaus, W., Jacobs, A. M., & Heekeren, H. R. (2015). The neural correlates of emotion alignment in social interaction. Soc Cogn Affect Neurosci, 10(3), 435–443. https://doi.org/10.1093/scan/nsu066 
+46. Korn*, C. W., Sharot*, T., Walter, H., Heekeren, H. R., & Dolan, R. J. (2014). Depression is related to an absence of optimistically biased belief updating about future life events. Psychol Med, 44(3), 579–592. https://doi.org/10.1017/S0033291713001074 
+47. Garrett, N., Sharot, T., Faulkner, P., Korn, C. W., Roiser, J. P., & Dolan, R. J. (2014). Losing the rose tinted glasses: Neural substrates of unbiased belief updating in depression. Front Hum Neurosci, 8, 639. https://doi.org/10.3389/fnhum.2014.00639 
+48. Korn, C. W., Fan, Y., Zhang, K., Wang, C., Han, S., & Heekeren, H. R. (2014). Cultural influences on social feedback processing of character traits. Front Hum Neurosci, 8, 192. https://doi.org/10.3389/fnhum.2014.00192 
+49. Castro, L. R., Brito, M., Guiot, E., Polito, M., Korn, C. W., Herve, D., Girault, J. A., Paupardin-Tritsch, D., & Vincent, P. (2013). Striatal neurones have a specific ability to respond to phasic dopamine release. J Physiol, 591(13), 3197–3214. https://doi.org/10.1113/jphysiol.2013.252197 
+50. Meshi, D., Biele, G., Korn, C. W., & Heekeren, H. R. (2012). How expert advice influences decision making. PLoS One, 7(11), e49748. https://doi.org/10.1371/journal.pone.0049748 
+51. Korn, C. W., Prehn, K., Park, S. Q., Walter, H., & Heekeren, H. R. (2012). Positively biased processing of self-relevant social feedback. J Neurosci, 32(47), 16832–16844. https://doi.org/10.1523/JNEUROSCI.3016-12.2012 
+52. Sharot, T., Guitart-Masip, M., Korn, C. W., Chowdhury, R., & Dolan, R. J. (2012). How dopamine enhances an optimism bias in humans. Curr Biol, 22(16), 1477–1481. https://doi.org/10.1016/j.cub.2012.05.053 
+53. Sharot, T., Kanai, R., Marston, D., Korn, C. W., Rees, G., & Dolan, R. J. (2012). Selectively altering belief formation in the human brain. Proc Natl Acad Sci U S A, 109(42), 17058–17062. https://doi.org/10.1073/pnas.1205828109 
+54. Sharot*, T., Korn*, C. W., & Dolan, R. J. (2011). How unrealistic optimism is maintained in the face of reality. Nat Neurosci, 14(11), 1475–1479. https://doi.org/10.1038/nn.2949 
+
+Preprints
+55. Zhang, S., Blank, H., Terzidis, I., Rosenblau, G., & Korn, C. W. (2025). Pupil dilation reflects prediction errors in learning about others’ personality traits. preprint & submitted. https://doi.org/0.31234/osf.io/9verk_v2 
+56. Liu, J., Oganian, Y., Wagner, V., & Korn, C. W. (2025). Does the option to be neutral alter the framing effect? preprint. https://doi.org/10.31234/osf.io/9c7z4_v1 
+57. Zhang, S., Xue, Y., Ma, Y., & Korn, C. W. (2025). The self-allocation bias – behavioral and neural characterization of a newly identified bias for individual performance and contribution in cooperative tasks. preprint & submitted. https://doi.org/10.31234/osf.io/cqr5w_v1 
+58. Kammler-Sücker, K. I., Burghardt, M., Mohr, M., Zhang, S., & Korn, C. W. (2025). Virtual grid aggression tasks reveal intention-dependent cooperation and affective responses to digital agents. preprint. https://doi.org/10.31234/osf.io/yxhzv_v1 
+59. Schnitzler, T., Perla, R., & Korn, C. W. (2025). Whole-body synchronization in autistic adults. preprint & submitted. https://doi.org/10.31234/osf.io/74zqp_v1 
+60. Cahalan, S., Block, S. H., Loughlin, M., Perla, R., Korn, C. W., & Rosenblau, G. (2025). Rethinking the double empathy problem – modeling how autistic and non-autistic groups learn about their own and each other’s preferences. preprint & submitted. https://doi.org/10.31219/osf.io/8v3nk_v1  
+61. Czekalla, N., Schroder, A., Mayer, A. V., Stierand, J., Stolz, D. S., Kube, T., Korn, C. W., Wilhelm-Groch, I., Klein, J., Paulus, F. M., Krach, S., & Muller-Pinzler, L. (2025). Aberrant insula activity to negative and reduced learning from positive prediction errors as mechanisms underlying maladaptive self-belief formation in depression. preprint & submitted. https://doi.org/10.1101/2024.05.09.593087 
+62. Golowin, S., Duncan, N. W., Shaikh, F., & Korn, C. W. (2025). Humans employ more sophisticated decision policies when threat is higher in approach-avoidance conflicts. preprint & submitted. https://doi.org/10.31234/osf.io/76qdy_v2 
+63. Garcia-Arch, J., Kube, T., Fuentemilla, L., & Korn, C. W. (2025). Self-utility distance predicts perceived stress and affective vulnerability. preprint & submitted. https://doi.org/10.31234/osf.io/gh9q8_v1 
+64. Shlobin, N. A., Beestrum, M., Soutschek, A., & Korn, C. W. (2025). Cognitive biases in physician decision-making: A systematic review. preprint & submitted. https://doi.org/10.31234/osf.io/7abxt_v1 
+65. Hu, X., García-Arch, J., Zhang, S., & Korn, C. W. (2025b). Imagined self-related feedback elicits positively biased processing. preprint & submitted. https://doi.org/10.31234/osf.io/jp2kn_v1 
+66. Guennouni, I., Korn*, C. W., & Koppe*, G. (2025). The price of dark traits: Strategic exploitation and its limitations in repeated trust games. preprint & submitted. https://doi.org/10.31234/osf.io/ke734_v1 
+67. Guennouni, I., Koppe*, G., & Korn*, C. W. (2025). When forgiveness backfires: Rejection sensitivity and cooperative behavior following exposure to adaptive forgiving agents. preprint & submitted. https://doi.org/10.31234/osf.io/df5vb_v1 
+68. Korn, C. W., Kerzel, M., Redžepovi?, S., Barros, P., Heinrich, S., Wermter, S., & Gläscher, J. (2021). Cross-modal emotion recognition: How similar are patterns between dnns and humand fmri data? Brain2ai@iclr2021. conference proceedings. https://tinyurl.com/2vmh95vj 
+
+
+
+Miscellaneous
+69. Korn, C. W. (2025). Tools and toys: Impulses for researching and promoting functional social interactions. Athene Magazin der Heidelberger Akademie der Wissenschaften, 1. (Original work published Werkzeuge und Spielzeuge: Impulse zur Erforschung und Förderung von funktionalen sozialen Interaktionen) https://www.hadw-bw.de/sites/default/files/documents/Athene_1-25.pdf 
+70. Steiger, O., Doppelhofer, L. M., Kostova, R., Koch, N., & Korn, C. W. (2025). Personality dimensions in borderline personality disorder - a meta-analysis. poster at DGPPN conference. https://heibox.uni-heidelberg.de/d/df11fb55324a4f319ee8/
+71. Hu, X., García-Arch, J., Zhang, S., & Korn, C. W. (2025a). Self-enhancement in artificial cognition: Cross-linguistic and cross-cultural evidence from large language models. proposal for special issue. https://osf.io/g92qj/overview
+72. Kostova, R., Rosenblau, G., & Korn, C. W. (2025). How do teens and adults learn about other people? In-Mind Online-Magazin. (Original work published Wie lernen Jugendliche und Erwachsene über andere Menschen?) https://de.in-mind.org/article/wie-lernen-jugendliche-und-erwachsene-ueber-andere-menschen 
+73. Korn, C. W., & Rosenblau, G. (2020). How do teens and adults learn about other people? Front. Young Minds, 8(563084). https://doi.org/10.3389/frym.2020.563084 
+
+Supervisor: MD / Dr. med.
+Ioannis Terzidis
+- since 08.2024
+- Vorhersagefehler und Pupillendilatation beim sozialen Lernen über Personen mit ähnlichen Charaktereigenschaften
+Olivia Steiger
+- since 04.2025
+- Die Verteilung verschiedener Persönlichkeitseigenschaften bei Menschen mit Borderline Persönlichkeitsstörung – eine Meta-Analyse
+Lisa Ecker
+- since 06.2025
+- Aggressives Entscheidungsverhalten in virtuellen sozialen Konfliktszenarien: Vergleich der Variabilität in Verhalten und in den neuronalen Korrelaten bei gesunden Personen und Patient:innen mit hohen Aggressionswerten
+Chantal Jakobi
+- since 09.2025
+- Ethischer Diskurs mit digitalen Akteuren – eine Virtual Reality Studie
+
+
+
+15
+
+
